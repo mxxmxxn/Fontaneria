@@ -42,12 +42,12 @@
             
             <!-- Desktop Menu -->
             <ul class="navbar-menu desktop">
-                <li><a href="#hero" class="nav-link">Inicio</a></li>
-                <li><a href="#about" class="nav-link">Sobre mí</a></li>
-                <li><a href="#services" class="nav-link">Servicios</a></li>
-                <li><a href="#portfolio" class="nav-link">Trabajos</a></li>
-                <li><a href="#testimonials" class="nav-link">Opiniones</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <li><a href="#hero" class="nav-link" data-i18n="nav-inicio">Inicio</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav-about">Sobre mí</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav-services">Servicios</a></li>
+                <li><a href="#portfolio" class="nav-link" data-i18n="nav-portfolio">Trabajos</a></li>
+                <li><a href="#testimonials" class="nav-link" data-i18n="nav-testimonials">Opiniones</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contacto</a></li>
             </ul>
             
             <div class="language-selector desktop">
@@ -108,26 +108,26 @@
         <div class="hero-content">
             <div class="hero-badge slide-up">
                 <span class="badge-dot"></span>
-                <span class="badge-text">Servicio 24 horas · Respuesta inmediata</span>
+                <span class="badge-text" data-i18n="servicio-24h">Servicio 24 horas · Respuesta inmediata</span>
             </div>
             
-            <h1 class="hero-title slide-up" style="animation-delay: 0.1s;">
-                Soluciones de fontanería <span class="highlight-text">rápidas y<br>eficientes</span>
+            <h1 class="hero-title slide-up" style="animation-delay: 0.1s;" data-i18n="hero-title">
+                Soluciones de fontanería <span class="highlight-text" data-i18n="hero-title-highlight">rápidas y<br>eficientes</span>
             </h1>
             
-            <p class="hero-subtitle slide-up" style="animation-delay: 0.2s;">
+            <p class="hero-subtitle slide-up" style="animation-delay: 0.2s;" data-i18n="hero-subtitle">
                 Soy <span class="fontanero-name">Carlos García</span>, fontanero profesional con más de 15 años de experiencia. Reparaciones, instalaciones y urgencias en tu zona.
             </p>
             
             <div class="hero-buttons slide-up" style="animation-delay: 0.3s;">
-                <button class="btn btn-whatsapp" onclick="openWhatsApp()">
+                <button class="btn btn-whatsapp" onclick="openWhatsApp()" data-i18n="btn-whatsapp">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="10"></circle>
                         <polyline points="12 16 16 12 12 8 8 12 12 16"></polyline>
                     </svg>
                     Contactar por WhatsApp
                 </button>
-                <button class="btn btn-secondary" onclick="contactForm()">
+                <button class="btn btn-secondary" onclick="contactForm()" data-i18n="btn-contactar">
                     Contactar
                 </button>
             </div>
@@ -148,14 +148,14 @@
                 
                 <!-- Right Column: Content -->
                 <div class="about-content">
-                    <span class="section-label">Sobre mí</span>
-                    <h2 class="section-title">Fontanero de confianza en tu zona</h2>
+                    <span class="section-label" data-i18n="about-label">Sobre mí</span>
+                    <h2 class="section-title" data-i18n="about-title">Fontanero de confianza en tu zona</h2>
                     
-                    <p class="about-text">
+                    <p class="about-text" data-i18n="about-text-1">
                         Con más de 15 años de experiencia en el sector de la fontanería, he tenido el privilegio de trabajar con miles de clientes satisfechos en Madrid y alrededores. Mi compromiso es siempre entender tus necesidades y ofrecer soluciones personalizadas que se adapten a tu presupuesto y urgencia.
                     </p>
                     
-                    <p class="about-text">
+                    <p class="about-text" data-i18n="about-text-2">
                         Mantengo los más altos estándares de profesionalismo, puntualidad y transparencia en cada trabajo. Creo que la confianza se gana con hechos: presupuestos honestos, trabajos bien hechos y garantía en mis reparaciones. Esa es mi promesa.
                     </p>
                     
@@ -168,8 +168,8 @@
                                     <path d="M4 15h16"></path>
                                 </svg>
                             </div>
-                            <div class="stat-value">15+</div>
-                            <div class="stat-label">Años experiencia</div>
+                            <div class="stat-value" data-i18n="stat-1-value">15+</div>
+                            <div class="stat-label" data-i18n="stat-1-label">Años experiencia</div>
                         </div>
                         
                         <div class="stat-card">
@@ -181,8 +181,8 @@
                                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                                 </svg>
                             </div>
-                            <div class="stat-value">2.000+</div>
-                            <div class="stat-label">Trabajos realizados</div>
+                            <div class="stat-value" data-i18n="stat-2-value">2.000+</div>
+                            <div class="stat-label" data-i18n="stat-2-label">Trabajos realizados</div>
                         </div>
                         
                         <div class="stat-card">
@@ -191,8 +191,8 @@
                                     <polyline points="20 6 9 17 4 12"></polyline>
                                 </svg>
                             </div>
-                            <div class="stat-value">2 años</div>
-                            <div class="stat-label">Garantía en trabajos</div>
+                            <div class="stat-value" data-i18n="stat-3-value">2 años</div>
+                            <div class="stat-label" data-i18n="stat-3-label">Garantía en trabajos</div>
                         </div>
                         
                         <div class="stat-card">
@@ -202,8 +202,8 @@
                                     <path d="M12 6v6l4 2"></path>
                                 </svg>
                             </div>
-                            <div class="stat-value">✓</div>
-                            <div class="stat-label">Certificación oficial</div>
+                            <div class="stat-value" data-i18n="stat-4-value">✓</div>
+                            <div class="stat-label" data-i18n="stat-4-label">Certificación oficial</div>
                         </div>
                     </div>
                 </div>
@@ -215,9 +215,9 @@
     <section id="services" class="services-section section-padding">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Servicios</span>
-                <h2 class="section-title">¿Qué puedo hacer por ti?</h2>
-                <p class="section-subtitle">Estos son los precios orientativos, consulta si tienes dudas sobre algún servicio</p>
+                <span class="section-label" data-i18n="services-label">Servicios</span>
+                <h2 class="section-title" data-i18n="services-title">¿Qué puedo hacer por ti?</h2>
+                <p class="section-subtitle" data-i18n="services-subtitle">Estos son los precios orientativos, consulta si tienes dudas sobre algún servicio</p>
             </div>
             
             <div class="services-grid">
@@ -230,9 +230,9 @@
                             <path d="M9 22h6v-4H9z"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Revisión general</h3>
-                    <p class="service-description">Inspección completa del sistema de tuberías y fontanería</p>
-                    <span class="service-price">Desde 40€</span>
+                    <h3 class="service-title" data-i18n="service-1-title">Revisión general</h3>
+                    <p class="service-description" data-i18n="service-1-desc">Inspección completa del sistema de tuberías y fontanería</p>
+                    <span class="service-price" data-i18n="service-1-price">Desde 40€</span>
                 </div>
                 
                 <!-- Service 2 -->
@@ -243,9 +243,9 @@
                             <path d="M12 11l-4-4m4 4l4-4"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Arreglo de fugas</h3>
-                    <p class="service-description">Reparación de fugas en tuberías y conexiones</p>
-                    <span class="service-price">Desde 60€</span>
+                    <h3 class="service-title" data-i18n="service-2-title">Arreglo de fugas</h3>
+                    <p class="service-description" data-i18n="service-2-desc">Reparación de fugas en tuberías y conexiones</p>
+                    <span class="service-price" data-i18n="service-2-price">Desde 60€</span>
                 </div>
                 
                 <!-- Service 3 -->
@@ -255,9 +255,9 @@
                             <path d="M3 8h18v-2H3v2zm0 4h18v-2H3v2zm0 4h18v-2H3v2z"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Desatascos</h3>
-                    <p class="service-description">Desatascos de desagües, tuberías y alcantarillas</p>
-                    <span class="service-price">Desde 50€</span>
+                    <h3 class="service-title" data-i18n="service-3-title">Desatascos</h3>
+                    <p class="service-description" data-i18n="service-3-desc">Desatascos de desagües, tuberías y alcantarillas</p>
+                    <span class="service-price" data-i18n="service-3-price">Desde 50€</span>
                 </div>
                 
                 <!-- Service 4 -->
@@ -267,9 +267,9 @@
                             <path d="M6 4h12v2H6V4zm0 6h12v8H6v-8zm2-2h8v-2H8v2z"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Instalación de grifos/sanitarios</h3>
-                    <p class="service-description">Instalación de grifería y accesorios sanitarios</p>
-                    <span class="service-price">Desde 80€</span>
+                    <h3 class="service-title" data-i18n="service-4-title">Instalación de grifos/sanitarios</h3>
+                    <p class="service-description" data-i18n="service-4-desc">Instalación de grifería y accesorios sanitarios</p>
+                    <span class="service-price" data-i18n="service-4-price">Desde 80€</span>
                 </div>
                 
                 <!-- Service 5 -->
@@ -280,9 +280,9 @@
                             <circle cx="12" cy="12" r="10"></circle>
                         </svg>
                     </div>
-                    <h3 class="service-title">Mantenimiento calefacción</h3>
-                    <p class="service-description">Mantenimiento y reparación de sistemas de calefacción</p>
-                    <span class="service-price">Desde 70€</span>
+                    <h3 class="service-title" data-i18n="service-5-title">Mantenimiento calefacción</h3>
+                    <p class="service-description" data-i18n="service-5-desc">Mantenimiento y reparación de sistemas de calefacción</p>
+                    <span class="service-price" data-i18n="service-5-price">Desde 70€</span>
                 </div>
                 
                 <!-- Service 6 -->
@@ -292,9 +292,9 @@
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Urgencias 24h</h3>
-                    <p class="service-description">Servicio de emergencia disponible las 24 horas</p>
-                    <span class="service-price">Desde 90€</span>
+                    <h3 class="service-title" data-i18n="service-6-title">Urgencias 24h</h3>
+                    <p class="service-description" data-i18n="service-6-desc">Servicio de emergencia disponible las 24 horas</p>
+                    <span class="service-price" data-i18n="service-6-price">Desde 90€</span>
                 </div>
                 
                 <!-- Service 7 -->
@@ -305,9 +305,9 @@
                             <path d="M10 14l4-4m-4 0l4 4"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Reformas baño/cocina</h3>
-                    <p class="service-description">Reformas integrales de baños y cocinas</p>
-                    <span class="service-price">Consultar</span>
+                    <h3 class="service-title" data-i18n="service-7-title">Reformas baño/cocina</h3>
+                    <p class="service-description" data-i18n="service-7-desc">Reformas integrales de baños y cocinas</p>
+                    <span class="service-price" data-i18n="service-7-price">Consultar</span>
                 </div>
                 
                 <!-- Service 8 -->
@@ -318,9 +318,9 @@
                             <polyline points="13 2 13 9 20 9"></polyline>
                         </svg>
                     </div>
-                    <h3 class="service-title">Desplazamiento</h3>
-                    <p class="service-description">Coste de desplazamiento según distancia</p>
-                    <span class="service-price">10-25€</span>
+                    <h3 class="service-title" data-i18n="service-8-title">Desplazamiento</h3>
+                    <p class="service-description" data-i18n="service-8-desc">Coste de desplazamiento según distancia</p>
+                    <span class="service-price" data-i18n="service-8-price">10-25€</span>
                 </div>
             </div>
         </div>
@@ -330,8 +330,8 @@
     <section id="portfolio" class="portfolio-section section-padding">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Portafolio</span>
-                <h2 class="section-title">Nuestros trabajos recientes</h2>
+                <span class="section-label" data-i18n="portfolio-label">Portafolio</span>
+                <h2 class="section-title" data-i18n="portfolio-title">Nuestros trabajos recientes</h2>
             </div>
             
             <div class="portfolio-grid">
@@ -339,8 +339,8 @@
                 <div class="portfolio-card group" style="animation-delay: 0ms;">
                     <img src="assets/reforma_baño.jpg" alt="Reforma baño" class="portfolio-image">
                     <div class="portfolio-overlay">
-                        <span class="portfolio-category">Reforma</span>
-                        <h3 class="portfolio-title">Reforma baño</h3>
+                        <span class="portfolio-category" data-i18n="portfolio-cat-1">Reforma</span>
+                        <h3 class="portfolio-title" data-i18n="portfolio-title-1">Reforma baño</h3>
                     </div>
                     <button class="portfolio-zoom" onclick="openLightbox('assets/portfolio-bathroom.jpg', 'Reforma baño')">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -354,8 +354,8 @@
                 <div class="portfolio-card group" style="animation-delay: 100ms;">
                     <img src="assets/instalacion.jpg" alt="Instalación cocina" class="portfolio-image">
                     <div class="portfolio-overlay">
-                        <span class="portfolio-category">Instalación</span>
-                        <h3 class="portfolio-title">Instalación cocina</h3>
+                        <span class="portfolio-category" data-i18n="portfolio-cat-2">Instalación</span>
+                        <h3 class="portfolio-title" data-i18n="portfolio-title-2">Instalación cocina</h3>
                     </div>
                     <button class="portfolio-zoom" onclick="openLightbox('assets/portfolio-kitchen.jpg', 'Instalación cocina')">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -369,8 +369,8 @@
                 <div class="portfolio-card group" style="animation-delay: 200ms;">
                     <img src="assets/instalacion_tuberias.jpg" alt="Sistema calefacción" class="portfolio-image">
                     <div class="portfolio-overlay">
-                        <span class="portfolio-category">Calefacción</span>
-                        <h3 class="portfolio-title">Sistema de calefacción</h3>
+                        <span class="portfolio-category" data-i18n="portfolio-cat-3">Calefacción</span>
+                        <h3 class="portfolio-title" data-i18n="portfolio-title-3">Sistema de calefacción</h3>
                     </div>
                     <button class="portfolio-zoom" onclick="openLightbox('assets/portfolio-heating.jpg', 'Sistema de calefacción')">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -384,8 +384,8 @@
                 <div class="portfolio-card group" style="animation-delay: 300ms;">
                     <img src="assets/instalacion_biden.jpg" alt="Reparación doméstica" class="portfolio-image">
                     <div class="portfolio-overlay">
-                        <span class="portfolio-category">Reparación</span>
-                        <h3 class="portfolio-title">Reparación doméstica</h3>
+                        <span class="portfolio-category" data-i18n="portfolio-cat-4">Reparación</span>
+                        <h3 class="portfolio-title" data-i18n="portfolio-title-4">Reparación doméstica</h3>
                     </div>
                     <button class="portfolio-zoom" onclick="openLightbox('assets/portfolio-repair.jpg', 'Reparación doméstica')">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -414,8 +414,8 @@
     <section id="testimonials" class="testimonials-section section-padding">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Opiniones</span>
-                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                <span class="section-label" data-i18n="testimonials-label">Opiniones</span>
+                <h2 class="section-title" data-i18n="testimonials-title">Lo que dicen nuestros clientes</h2>
             </div>
             
             <div class="testimonials-grid">
@@ -438,8 +438,8 @@
                             <polygon points="12 2 15.09 10.26 24 10.26 17.55 15.67 19.64 23.74 12 18.33 4.36 23.74 6.45 15.67 0 10.26 8.91 10.26 12 2"></polygon>
                         </svg>
                     </div>
-                    <p class="testimonial-text">"Carlos llegó rápidamente a arreglar una fuga en mi baño. Trabajo muy profesional y limpio, además sus precios son justos."</p>
-                    <p class="testimonial-author">María González</p>
+                    <p class="testimonial-text" data-i18n="testimonial-1">"Carlos llegó rápidamente a arreglar una fuga en mi baño. Trabajo muy profesional y limpio, además sus precios son justos."</p>
+                    <p class="testimonial-author" data-i18n="testimonial-1-author">María González</p>
                 </div>
                 
                 <!-- Testimonial 2 -->
@@ -461,8 +461,8 @@
                             <polygon points="12 2 15.09 10.26 24 10.26 17.55 15.67 19.64 23.74 12 18.33 4.36 23.74 6.45 15.67 0 10.26 8.91 10.26 12 2"></polygon>
                         </svg>
                     </div>
-                    <p class="testimonial-text">"Hizo la reforma del baño de mi casa. Excelente resultado, muy puntual y se nota que tiene experiencia. Lo recomiendo sin dudarlo."</p>
-                    <p class="testimonial-author">Juan Rodríguez</p>
+                    <p class="testimonial-text" data-i18n="testimonial-2">"Hizo la reforma del baño de mi casa. Excelente resultado, muy puntual y se nota que tiene experiencia. Lo recomiendo sin dudarlo."</p>
+                    <p class="testimonial-author" data-i18n="testimonial-2-author">Juan Rodríguez</p>
                 </div>
                 
                 <!-- Testimonial 3 -->
@@ -484,8 +484,8 @@
                             <polygon points="12 2 15.09 10.26 24 10.26 17.55 15.67 19.64 23.74 12 18.33 4.36 23.74 6.45 15.67 0 10.26 8.91 10.26 12 2"></polygon>
                         </svg>
                     </div>
-                    <p class="testimonial-text">"Llamé a Carlos a las 11 de la noche por una fuga urgente. Vino en una hora y solucionó todo. Increíble profesionalidad."</p>
-                    <p class="testimonial-author">Carlos López</p>
+                    <p class="testimonial-text" data-i18n="testimonial-3">"Llamé a Carlos a las 11 de la noche por una fuga urgente. Vino en una hora y solucionó todo. Increíble profesionalidad."</p>
+                    <p class="testimonial-author" data-i18n="testimonial-3-author">Carlos López</p>
                 </div>
                 
                 <!-- Testimonial 4 -->
@@ -507,8 +507,8 @@
                             <polygon points="12 2 15.09 10.26 24 10.26 17.55 15.67 19.64 23.74 12 18.33 4.36 23.74 6.45 15.67 0 10.26 8.91 10.26 12 2"></polygon>
                         </svg>
                     </div>
-                    <p class="testimonial-text">"Presupuesto en presencia sin sorpresas. Todo fue rápido y la instalación de los nuevos grifos quedó perfecta. Top."</p>
-                    <p class="testimonial-author">Ana Martínez</p>
+                    <p class="testimonial-text" data-i18n="testimonial-4">"Presupuesto en presencia sin sorpresas. Todo fue rápido y la instalación de los nuevos grifos quedó perfecta. Top."</p>
+                    <p class="testimonial-author" data-i18n="testimonial-4-author">Ana Martínez</p>
                 </div>
             </div>
         </div>
@@ -518,8 +518,8 @@
     <section id="contact" class="contact-section section-padding">
         <div class="container contact-container">
             <div class="contact-header">
-                <h2 class="section-title">¿Necesitas un fontanero?</h2>
-                <p class="section-subtitle">No dudes en contactarme, te responderé rápidamente</p>
+                <h2 class="section-title" data-i18n="contact-title">¿Necesitas un fontanero?</h2>
+                <p class="section-subtitle" data-i18n="contact-subtitle">No dudes en contactarme, te responderé rápidamente</p>
             </div>
             
             <div class="contact-info">
@@ -531,8 +531,8 @@
                         </svg>
                     </div>
                     <div class="contact-text">
-                        <p class="contact-label">Teléfono</p>
-                        <p class="contact-value">600 000 000</p>
+                        <p class="contact-label" data-i18n="contact-phone-label">Teléfono</p>
+                        <p class="contact-value" data-i18n="contact-phone-value">600 000 000</p>
                     </div>
                 </div>
                 
@@ -544,7 +544,7 @@
                         </svg>
                     </div>
                     <div class="contact-text">
-                        <p class="contact-label">WhatsApp</p>
+                        <p class="contact-label" data-i18n="contact-whatsapp-label">WhatsApp</p>
                         <p class="contact-value">600 000 000</p>
                     </div>
                 </div>
@@ -558,8 +558,8 @@
                         </svg>
                     </div>
                     <div class="contact-text">
-                        <p class="contact-label">Email</p>
-                        <p class="contact-value">carlos@aquafix.es</p>
+                        <p class="contact-label" data-i18n="contact-email-label">Email</p>
+                        <p class="contact-value" data-i18n="contact-email-value">carlos@aquafix.es</p>
                     </div>
                 </div>
                 
@@ -572,8 +572,8 @@
                         </svg>
                     </div>
                     <div class="contact-text">
-                        <p class="contact-label">Zona de trabajo</p>
-                        <p class="contact-value">Madrid y alrededores</p>
+                        <p class="contact-label" data-i18n="contact-location-label">Zona de trabajo</p>
+                        <p class="contact-value" data-i18n="contact-location-value">Madrid y alrededores</p>
                     </div>
                 </div>
                 
@@ -586,20 +586,20 @@
                         </svg>
                     </div>
                     <div class="contact-text">
-                        <p class="contact-label">Horario</p>
-                        <p class="contact-value">L-V 8:00-20:00 · Urgencias 24h</p>
+                        <p class="contact-label" data-i18n="contact-hours-label">Horario</p>
+                        <p class="contact-value" data-i18n="contact-hours-value">L-V 8:00-20:00 · Urgencias 24h</p>
                     </div>
                 </div>
             </div>
             
             <div class="contact-buttons">
-                <button class="btn btn-whatsapp-large" onclick="openWhatsApp()">
+                <button class="btn btn-whatsapp-large" onclick="openWhatsApp()" data-i18n="contact-whatsapp-btn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2.5 22l6.26-1.47C10 21.64 11 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-.97 0-1.91-.16-2.8-.46l-.2-.07-2.06.48.5-1.82-.12-.19C4.47 15.8 4 13.95 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"></path>
                     </svg>
                     Contactar por WhatsApp
                 </button>
-                <button class="btn btn-phone-outline" onclick="callPhone()">
+                <button class="btn btn-phone-outline" onclick="callPhone()" data-i18n="contact-call-btn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
@@ -614,16 +614,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <p class="footer-logo">🔧 AquaFix</p>
-                    <p class="footer-subtitle">Carlos García · Fontanero Profesional</p>
+                    <p class="footer-logo" data-i18n="footer-brand">🔧 AquaFix</p>
+                    <p class="footer-subtitle" data-i18n="footer-subtitle">Carlos García · Fontanero Profesional</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#" class="footer-link">Política de privacidad</a>
-                    <a href="#" class="footer-link">Cookies</a>
+                    <a href="#" class="footer-link" data-i18n="footer-privacy">Política de privacidad</a>
+                    <a href="#" class="footer-link" data-i18n="footer-cookies">Cookies</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-copyright">&copy; <span id="year"></span> AquaFix. Todos los derechos reservados.</p>
+                <p class="footer-copyright"><span data-i18n="footer-copyright">&copy; <span id="year"></span> AquaFix. Todos los derechos reservados.</span></p>
             </div>
         </div>
     </footer>

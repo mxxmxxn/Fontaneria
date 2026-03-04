@@ -1,54 +1,330 @@
 /* ============================================================================
-   SISTEMA DE TRADUCCIÓN (i18n)
+   SISTEMA DE TRADUCCIÓN (i18n) - COMPLETO
    ========================================================================== */
 
 let currentLang = 'es';
 
 const translations = {
   es: {
-    'servicio-24h': 'Servicio 24 horas · Respuesta inmediata',
-    'hero-title': 'Soluciones de fontanería rápidas y eficientes',
-    'hero-title-highlight': 'Soluciones de fontanería rápidas',
-    'hero-subtitle': 'Soy nombre fontanero, fontanero profesional con +15 años de experiencia. Desde reparaciones urgentes hasta reformas completas, ofrezco soluciones confiables y rápidas para tu hogar o negocio.',
-    'sobre-mi': 'Sobre mí',
-    'fontanero-confianza': 'Fontanero de confianza en tu zona',
-    'cta-button': 'Llamar ahora',
+    // Navigation
     'nav-inicio': 'Inicio',
     'nav-about': 'Sobre mí',
     'nav-services': 'Servicios',
     'nav-portfolio': 'Trabajos',
     'nav-testimonials': 'Opiniones',
-    'nav-contact': 'Contacto'
+    'nav-contact': 'Contacto',
+    'cta-button': 'Llamar ahora',
+    
+    // Hero Section
+    'servicio-24h': 'Servicio 24 horas · Respuesta inmediata',
+    'hero-title': 'Soluciones de fontanería rápidas y<br>eficientes',
+    'hero-title-highlight': 'rápidas y<br>eficientes',
+    'hero-subtitle': 'Soy Carlos García, fontanero profesional con más de 15 años de experiencia. Reparaciones, instalaciones y urgencias en tu zona.',
+    'btn-whatsapp': 'Contactar por WhatsApp',
+    'btn-contactar': 'Contactar',
+    
+    // About Section
+    'about-label': 'Sobre mí',
+    'about-title': 'Fontanero de confianza en tu zona',
+    'about-text-1': 'Con más de 15 años de experiencia en el sector de la fontanería, he tenido el privilegio de trabajar con miles de clientes satisfechos en Madrid y alrededores. Mi compromiso es siempre entender tus necesidades y ofrecer soluciones personalizadas que se adapten a tu presupuesto y urgencia.',
+    'about-text-2': 'Mantengo los más altos estándares de profesionalismo, puntualidad y transparencia en cada trabajo. Creo que la confianza se gana con hechos: presupuestos honestos, trabajos bien hechos y garantía en mis reparaciones. Esa es mi promesa.',
+    'stat-1-value': '15+',
+    'stat-1-label': 'Años experiencia',
+    'stat-2-value': '2.000+',
+    'stat-2-label': 'Trabajos realizados',
+    'stat-3-value': '2 años',
+    'stat-3-label': 'Garantía en trabajos',
+    'stat-4-value': '✓',
+    'stat-4-label': 'Certificación oficial',
+    
+    // Services Section
+    'services-label': 'Servicios',
+    'services-title': '¿Qué puedo hacer por ti?',
+    'services-subtitle': 'Estos son los precios orientativos, consulta si tienes dudas sobre algún servicio',
+    'service-1-title': 'Revisión general',
+    'service-1-desc': 'Inspección completa del sistema de tuberías y fontanería',
+    'service-1-price': 'Desde 40€',
+    'service-2-title': 'Arreglo de fugas',
+    'service-2-desc': 'Reparación de fugas en tuberías y conexiones',
+    'service-2-price': 'Desde 60€',
+    'service-3-title': 'Desatascos',
+    'service-3-desc': 'Desatascos de desagües, tuberías y alcantarillas',
+    'service-3-price': 'Desde 50€',
+    'service-4-title': 'Instalación de grifos/sanitarios',
+    'service-4-desc': 'Instalación de grifería y accesorios sanitarios',
+    'service-4-price': 'Desde 80€',
+    'service-5-title': 'Mantenimiento calefacción',
+    'service-5-desc': 'Mantenimiento y reparación de sistemas de calefacción',
+    'service-5-price': 'Desde 70€',
+    'service-6-title': 'Urgencias 24h',
+    'service-6-desc': 'Servicio de emergencia disponible las 24 horas',
+    'service-6-price': 'Desde 90€',
+    'service-7-title': 'Reformas baño/cocina',
+    'service-7-desc': 'Reformas integrales de baños y cocinas',
+    'service-7-price': 'Consultar',
+    'service-8-title': 'Desplazamiento',
+    'service-8-desc': 'Coste de desplazamiento según distancia',
+    'service-8-price': '10-25€',
+    
+    // Portfolio Section
+    'portfolio-label': 'Portafolio',
+    'portfolio-title': 'Nuestros trabajos recientes',
+    'portfolio-cat-1': 'Reforma',
+    'portfolio-title-1': 'Reforma baño',
+    'portfolio-cat-2': 'Instalación',
+    'portfolio-title-2': 'Instalación cocina',
+    'portfolio-cat-3': 'Calefacción',
+    'portfolio-title-3': 'Sistema de calefacción',
+    'portfolio-cat-4': 'Reparación',
+    'portfolio-title-4': 'Reparación doméstica',
+    
+    // Testimonials Section
+    'testimonials-label': 'Opiniones',
+    'testimonials-title': 'Lo que dicen nuestros clientes',
+    'testimonial-1': '"Carlos llegó rápidamente a arreglar una fuga en mi baño. Trabajo muy profesional y limpio, además sus precios son justos."',
+    'testimonial-1-author': 'María González',
+    'testimonial-2': '"Hizo la reforma del baño de mi casa. Excelente resultado, muy puntual y se nota que tiene experiencia. Lo recomiendo sin dudarlo."',
+    'testimonial-2-author': 'Juan Rodríguez',
+    'testimonial-3': '"Llamé a Carlos a las 11 de la noche por una fuga urgente. Vino en una hora y solucionó todo. Increíble profesionalidad."',
+    'testimonial-3-author': 'Carlos López',
+    'testimonial-4': '"Presupuesto en presencia sin sorpresas. Todo fue rápido y la instalación de los nuevos grifos quedó perfecta. Top."',
+    'testimonial-4-author': 'Ana Martínez',
+    
+    // Contact Section
+    'contact-title': '¿Necesitas un fontanero?',
+    'contact-subtitle': 'No dudes en contactarme, te responderé rápidamente',
+    'contact-phone-label': 'Teléfono',
+    'contact-phone-value': '600 000 000',
+    'contact-whatsapp-label': 'WhatsApp',
+    'contact-email-label': 'Email',
+    'contact-email-value': 'carlos@aquafix.es',
+    'contact-location-label': 'Zona de trabajo',
+    'contact-location-value': 'Madrid y alrededores',
+    'contact-hours-label': 'Horario',
+    'contact-hours-value': 'L-V 8:00-20:00 · Urgencias 24h',
+    'contact-whatsapp-btn': 'Contactar por WhatsApp',
+    'contact-call-btn': 'Llamar ahora',
+    
+    // Footer
+    'footer-brand': 'AquaFix',
+    'footer-subtitle': 'Carlos García · Fontanero Profesional',
+    'footer-privacy': 'Política de privacidad',
+    'footer-cookies': 'Cookies',
+    'footer-copyright': 'AquaFix. Todos los derechos reservados.'
   },
   en: {
-    'servicio-24h': '24-hour Service · Immediate Response',
-    'hero-title': 'Fast and Efficient Plumbing Solutions',
-    'hero-title-highlight': 'Fast and Efficient Plumbing Solutions',
-    'hero-subtitle': "I'm nombre fontanero, a professional plumber with +15 years of experience. From emergency repairs to complete renovations, I offer reliable and quick solutions for your home or business.",
-    'sobre-mi': 'About Me',
-    'fontanero-confianza': 'Trusted Plumber in Your Area',
-    'cta-button': 'Call Now',
+    // Navigation
     'nav-inicio': 'Home',
     'nav-about': 'About',
     'nav-services': 'Services',
     'nav-portfolio': 'Work',
     'nav-testimonials': 'Reviews',
-    'nav-contact': 'Contact'
+    'nav-contact': 'Contact',
+    'cta-button': 'Call Now',
+    
+    // Hero Section
+    'servicio-24h': '24-hour Service · Immediate Response',
+    'hero-title': 'Fast and Efficient<br>Plumbing Solutions',
+    'hero-title-highlight': 'Fast and Efficient<br>Plumbing Solutions',
+    'hero-subtitle': 'I\'m Carlos García, a professional plumber with over 15 years of experience. Repairs, installations and emergencies in your area.',
+    'btn-whatsapp': 'Contact via WhatsApp',
+    'btn-contactar': 'Contact',
+    
+    // About Section
+    'about-label': 'About Me',
+    'about-title': 'Trusted Plumber in Your Area',
+    'about-text-1': 'With over 15 years of experience in the plumbing sector, I have had the privilege of working with thousands of satisfied customers in Madrid and surrounding areas. My commitment is always to understand your needs and offer personalized solutions that fit your budget and urgency.',
+    'about-text-2': 'I maintain the highest standards of professionalism, punctuality and transparency in every job. I believe that trust is earned through facts: honest quotes, well-done work and guarantee in my repairs. That is my promise.',
+    'stat-1-value': '15+',
+    'stat-1-label': 'Years experience',
+    'stat-2-value': '2.000+',
+    'stat-2-label': 'Jobs completed',
+    'stat-3-value': '2 years',
+    'stat-3-label': 'Work warranty',
+    'stat-4-value': '✓',
+    'stat-4-label': 'Official certification',
+    
+    // Services Section
+    'services-label': 'Services',
+    'services-title': 'What can I do for you?',
+    'services-subtitle': 'These are indicative prices, consult if you have questions about any service',
+    'service-1-title': 'General inspection',
+    'service-1-desc': 'Complete inspection of plumbing and piping systems',
+    'service-1-price': 'From 40€',
+    'service-2-title': 'Leak repair',
+    'service-2-desc': 'Repair of leaks in pipes and connections',
+    'service-2-price': 'From 60€',
+    'service-3-title': 'Unclogging',
+    'service-3-desc': 'Unclogging of drains, pipes and sewers',
+    'service-3-price': 'From 50€',
+    'service-4-title': 'Installation of faucets/sanitaries',
+    'service-4-desc': 'Installation of faucets and sanitary accessories',
+    'service-4-price': 'From 80€',
+    'service-5-title': 'Heating maintenance',
+    'service-5-desc': 'Maintenance and repair of heating systems',
+    'service-5-price': 'From 70€',
+    'service-6-title': '24h Emergencies',
+    'service-6-desc': 'Emergency service available 24 hours',
+    'service-6-price': 'From 90€',
+    'service-7-title': 'Bathroom/Kitchen renovations',
+    'service-7-desc': 'Complete bathroom and kitchen renovations',
+    'service-7-price': 'Consult',
+    'service-8-title': 'Displacement',
+    'service-8-desc': 'Displacement cost according to distance',
+    'service-8-price': '10-25€',
+    
+    // Portfolio Section
+    'portfolio-label': 'Portfolio',
+    'portfolio-title': 'Our recent work',
+    'portfolio-cat-1': 'Renovation',
+    'portfolio-title-1': 'Bathroom renovation',
+    'portfolio-cat-2': 'Installation',
+    'portfolio-title-2': 'Kitchen installation',
+    'portfolio-cat-3': 'Heating',
+    'portfolio-title-3': 'Heating system',
+    'portfolio-cat-4': 'Repair',
+    'portfolio-title-4': 'Home repair',
+    
+    // Testimonials Section
+    'testimonials-label': 'Reviews',
+    'testimonials-title': 'What our customers say',
+    'testimonial-1': '"Carlos quickly repaired a leak in my bathroom. Very professional and clean work, plus his prices are fair."',
+    'testimonial-1-author': 'María González',
+    'testimonial-2': '"He did the renovation of my bathroom. Excellent result, very punctual and you can see he has experience. I highly recommend him."',
+    'testimonial-2-author': 'Juan Rodríguez',
+    'testimonial-3': '"I called Carlos at 11 at night for an urgent leak. He came in an hour and solved everything. Incredible professionalism."',
+    'testimonial-3-author': 'Carlos López',
+    'testimonial-4': '"Quote on site with no surprises. Everything was quick and the installation of the new faucets was perfect. Top."',
+    'testimonial-4-author': 'Ana Martínez',
+    
+    // Contact Section
+    'contact-title': 'Do you need a plumber?',
+    'contact-subtitle': 'Don\'t hesitate to contact me, I will respond quickly',
+    'contact-phone-label': 'Phone',
+    'contact-phone-value': '600 000 000',
+    'contact-whatsapp-label': 'WhatsApp',
+    'contact-email-label': 'Email',
+    'contact-email-value': 'carlos@aquafix.es',
+    'contact-location-label': 'Work area',
+    'contact-location-value': 'Madrid and surrounding areas',
+    'contact-hours-label': 'Hours',
+    'contact-hours-value': 'M-F 8:00-20:00 · 24h Emergencies',
+    'contact-whatsapp-btn': 'Contact via WhatsApp',
+    'contact-call-btn': 'Call Now',
+    
+    // Footer
+    'footer-brand': 'AquaFix',
+    'footer-subtitle': 'Carlos García · Professional Plumber',
+    'footer-privacy': 'Privacy Policy',
+    'footer-cookies': 'Cookies',
+    'footer-copyright': 'AquaFix. All rights reserved.'
   },
   fr: {
-    'servicio-24h': 'Service 24 heures · Réponse immédiate',
-    'hero-title': 'Solutions de Plomberie Rapides et Efficaces',
-    'hero-title-highlight': 'Solutions de Plomberie Rapides et Efficaces',
-    'hero-subtitle': "Je suis nombre fontanero, plombier professionnel avec +15 ans d'expérience. Des réparations d'urgence aux rénovations complètes, j'offre des solutions fiables et rapides pour votre maison ou votre entreprise.",
-    'sobre-mi': 'À propos de moi',
-    'fontanero-confianza': 'Plombier de confiance dans votre région',
-    'cta-button': 'Appeler maintenant',
+    // Navigation
     'nav-inicio': 'Accueil',
     'nav-about': 'À propos',
     'nav-services': 'Services',
     'nav-portfolio': 'Travaux',
     'nav-testimonials': 'Avis',
-    'nav-contact': 'Contact'
+    'nav-contact': 'Contact',
+    'cta-button': 'Appelez maintenant',
+    
+    // Hero Section
+    'servicio-24h': 'Service 24 heures · Réponse immédiate',
+    'hero-title': 'Solutions de Plomberie Rapides et<br>Efficaces',
+    'hero-title-highlight': 'Rapides et<br>Efficaces',
+    'hero-subtitle': 'Je suis Carlos García, plombier professionnel avec plus de 15 ans d\'expérience. Réparations, installations et urgences dans votre région.',
+    'btn-whatsapp': 'Contacter par WhatsApp',
+    'btn-contactar': 'Contacter',
+    
+    // About Section
+    'about-label': 'À propos de moi',
+    'about-title': 'Plombier de confiance dans votre région',
+    'about-text-1': 'Avec plus de 15 ans d\'expérience dans le secteur de la plomberie, j\'ai eu le privilège de travailler avec des milliers de clients satisfaits à Madrid et dans les environs. Mon engagement est toujours de comprendre vos besoins et de proposer des solutions personnalisées adaptées à votre budget et à votre urgence.',
+    'about-text-2': 'Je maintiens les plus hauts standards de professionnalisme, de ponctualité et de transparence dans chaque travail. Je crois que la confiance se gagne par les faits : des devis honnêtes, un travail bien fait et une garantie sur mes réparations. C\'est ma promesse.',
+    'stat-1-value': '15+',
+    'stat-1-label': 'Années d\'expérience',
+    'stat-2-value': '2.000+',
+    'stat-2-label': 'Travaux réalisés',
+    'stat-3-value': '2 ans',
+    'stat-3-label': 'Garantie sur les travaux',
+    'stat-4-value': '✓',
+    'stat-4-label': 'Certification officielle',
+    
+    // Services Section
+    'services-label': 'Services',
+    'services-title': 'Que puis-je faire pour vous?',
+    'services-subtitle': 'Ce sont les prix indicatifs, consultez si vous avez des questions sur un service',
+    'service-1-title': 'Inspection générale',
+    'service-1-desc': 'Inspection complète du système de plomberie et de tuyauterie',
+    'service-1-price': 'À partir de 40€',
+    'service-2-title': 'Réparation de fuites',
+    'service-2-desc': 'Réparation des fuites dans les tuyaux et les connexions',
+    'service-2-price': 'À partir de 60€',
+    'service-3-title': 'Dégorgement',
+    'service-3-desc': 'Dégorgement des éviers, tuyaux et égouts',
+    'service-3-price': 'À partir de 50€',
+    'service-4-title': 'Installation de robinets/sanitaires',
+    'service-4-desc': 'Installation de robinetterie et accessoires sanitaires',
+    'service-4-price': 'À partir de 80€',
+    'service-5-title': 'Maintenance chauffage',
+    'service-5-desc': 'Maintenance et réparation des systèmes de chauffage',
+    'service-5-price': 'À partir de 70€',
+    'service-6-title': 'Urgences 24h',
+    'service-6-desc': 'Service d\'urgence disponible 24 heures',
+    'service-6-price': 'À partir de 90€',
+    'service-7-title': 'Rénovations salle de bain/cuisine',
+    'service-7-desc': 'Rénovations complètes de salles de bain et cuisines',
+    'service-7-price': 'Consulter',
+    'service-8-title': 'Déplacement',
+    'service-8-desc': 'Coût de déplacement selon la distance',
+    'service-8-price': '10-25€',
+    
+    // Portfolio Section
+    'portfolio-label': 'Portfolio',
+    'portfolio-title': 'Nos travaux récents',
+    'portfolio-cat-1': 'Rénovation',
+    'portfolio-title-1': 'Rénovation salle de bain',
+    'portfolio-cat-2': 'Installation',
+    'portfolio-title-2': 'Installation cuisine',
+    'portfolio-cat-3': 'Chauffage',
+    'portfolio-title-3': 'Système de chauffage',
+    'portfolio-cat-4': 'Réparation',
+    'portfolio-title-4': 'Réparation domicile',
+    
+    // Testimonials Section
+    'testimonials-label': 'Avis',
+    'testimonials-title': 'Ce que disent nos clients',
+    'testimonial-1': '"Carlos est venu rapidement réparer une fuite dans ma salle de bain. Travail très professionnel et propre, de plus ses prix sont justes."',
+    'testimonial-1-author': 'María González',
+    'testimonial-2': '"Il a fait la rénovation de ma salle de bain. Résultat excellent, très ponctuel et on voit qu\'il a de l\'expérience. Je le recommande sans hésiter."',
+    'testimonial-2-author': 'Juan Rodríguez',
+    'testimonial-3': '"J\'ai appelé Carlos à 23h pour une fuite urgente. Il est venu en une heure et a tout résolu. Professionnalité incroyable."',
+    'testimonial-3-author': 'Carlos López',
+    'testimonial-4': '"Devis sur place sans surprise. Tout a été rapide et l\'installation des nouveaux robinets était parfaite. Top."',
+    'testimonial-4-author': 'Ana Martínez',
+    
+    // Contact Section
+    'contact-title': 'Avez-vous besoin d\'un plombier?',
+    'contact-subtitle': 'N\'hésitez pas à me contacter, je vous répondrai rapidement',
+    'contact-phone-label': 'Téléphone',
+    'contact-phone-value': '600 000 000',
+    'contact-whatsapp-label': 'WhatsApp',
+    'contact-email-label': 'Email',
+    'contact-email-value': 'carlos@aquafix.es',
+    'contact-location-label': 'Zone de travail',
+    'contact-location-value': 'Madrid et environs',
+    'contact-hours-label': 'Horaires',
+    'contact-hours-value': 'L-V 8:00-20:00 · Urgences 24h',
+    'contact-whatsapp-btn': 'Contacter par WhatsApp',
+    'contact-call-btn': 'Appelez maintenant',
+    
+    // Footer
+    'footer-brand': 'AquaFix',
+    'footer-subtitle': 'Carlos García · Plombier Professionnel',
+    'footer-privacy': 'Politique de confidentialité',
+    'footer-cookies': 'Cookies',
+    'footer-copyright': 'AquaFix. Tous les droits réservés.'
   }
 };
 
@@ -65,35 +341,16 @@ function changeLang(lang) {
 }
 
 function updateTranslations() {
-  // Hero
-  const badgeText = document.querySelector('.badge-text');
-  if (badgeText) badgeText.textContent = translations[currentLang]['servicio-24h'];
-  
-  const heroTitle = document.querySelector('.hero-title');
-  if (heroTitle) {
-    heroTitle.innerHTML = `<span class="highlight-text">${translations[currentLang]['hero-title-highlight']}</span>`;
-  }
-  
-  const heroSubtitle = document.querySelector('.hero-subtitle');
-  if (heroSubtitle) {
-    heroSubtitle.innerHTML = `<span class="subtitle-intro">${translations[currentLang]['hero-subtitle'].split(',')[0]},</span> ${translations[currentLang]['hero-subtitle'].split(',').slice(1).join(',')}`;
-  }
-  
-  // CTA Button
-  const ctaButton = document.querySelector('.cta-text');
-  if (ctaButton) ctaButton.textContent = translations[currentLang]['cta-button'];
-  
-  // Nav links
-  const navLinks = document.querySelectorAll('.nav-link');
-  const navNames = ['nav-inicio', 'nav-about', 'nav-services', 'nav-portfolio', 'nav-testimonials', 'nav-contact'];
-  navLinks.forEach((link, index) => {
-    if (navNames[index]) link.textContent = translations[currentLang][navNames[index]];
-  });
-  
-  // Mobile nav
-  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-  mobileLinks.forEach((link, index) => {
-    if (navNames[index]) link.textContent = translations[currentLang][navNames[index]];
+  // Traducir todos los elementos con data-i18n
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    if (translations[currentLang][key]) {
+      if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+        element.placeholder = translations[currentLang][key];
+      } else {
+        element.innerHTML = translations[currentLang][key];
+      }
+    }
   });
 }
 
