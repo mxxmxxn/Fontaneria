@@ -531,66 +531,70 @@ const testimonialCards = document.querySelectorAll('.testimonial-card');
 // Horizontal auto-scroll for testimonials section
 const testimonialsScroller = document.getElementById('testimonialsScroller');
 if (testimonialsScroller) {
-  let direction = 1;
-  let rafId = null;
-  let isPaused = false;
-  const speedPxPerSec = 42;
-  let lastTs = 0;
-  let carry = 0;
+  const stepPx = 1;
+  const intervalMs = 18;
+  let autoScrollTimer = null;
+  let resumeTimeout = null;
 
-  const tick = (ts) => {
-    if (!lastTs) {
-      lastTs = ts;
+  const startAutoScroll = () => {
+    if (autoScrollTimer) {
+      return;
     }
 
-    const dt = (ts - lastTs) / 1000;
-    lastTs = ts;
-
-    if (!isPaused) {
+    autoScrollTimer = setInterval(() => {
       const maxScroll = testimonialsScroller.scrollWidth - testimonialsScroller.clientWidth;
-      carry += speedPxPerSec * dt;
-      const step = Math.floor(carry);
-
-      if (step > 0) {
-        carry -= step;
-        testimonialsScroller.scrollLeft += step * direction;
+      if (maxScroll <= 0) {
+        return;
       }
 
-      if (testimonialsScroller.scrollLeft <= 0) {
-        direction = 1;
-      } else if (testimonialsScroller.scrollLeft >= maxScroll - 1) {
-        direction = -1;
+      if (testimonialsScroller.scrollLeft >= maxScroll - 1) {
+        testimonialsScroller.scrollLeft = 0;
+      } else {
+        testimonialsScroller.scrollLeft += stepPx;
       }
+    }, intervalMs);
+  };
+
+  const stopAutoScroll = () => {
+    if (autoScrollTimer) {
+      clearInterval(autoScrollTimer);
+      autoScrollTimer = null;
+    }
+  };
+
+  const resumeAfterDelay = () => {
+    if (resumeTimeout) {
+      clearTimeout(resumeTimeout);
     }
 
-    rafId = requestAnimationFrame(tick);
+    resumeTimeout = setTimeout(() => {
+      startAutoScroll();
+    }, 1200);
   };
 
-  const pauseScroll = () => {
-    isPaused = true;
-  };
-
-  const resumeScroll = () => {
-    lastTs = 0;
-    isPaused = false;
-  };
-
-  testimonialsScroller.addEventListener('mouseenter', pauseScroll);
-  testimonialsScroller.addEventListener('mouseleave', resumeScroll);
-  testimonialsScroller.addEventListener('touchstart', pauseScroll, { passive: true });
-  testimonialsScroller.addEventListener('touchend', resumeScroll, { passive: true });
-
-  rafId = requestAnimationFrame(tick);
+  testimonialsScroller.addEventListener('touchstart', stopAutoScroll, { passive: true });
+  testimonialsScroller.addEventListener('touchend', resumeAfterDelay, { passive: true });
+  testimonialsScroller.addEventListener('wheel', () => {
+    stopAutoScroll();
+    resumeAfterDelay();
+  }, { passive: true });
 
   document.addEventListener('visibilitychange', () => {
-    if (document.hidden && rafId) {
-      cancelAnimationFrame(rafId);
-      rafId = null;
-      lastTs = 0;
-    } else if (!document.hidden && !rafId) {
-      rafId = requestAnimationFrame(tick);
+    if (document.hidden) {
+      stopAutoScroll();
+    } else {
+      startAutoScroll();
     }
   });
+
+  window.addEventListener('resize', () => {
+    const maxScroll = testimonialsScroller.scrollWidth - testimonialsScroller.clientWidth;
+    if (testimonialsScroller.scrollLeft > maxScroll) {
+      testimonialsScroller.scrollLeft = Math.max(0, maxScroll);
+    }
+  });
+
+  startAutoScroll();
 }
 
 /* ============================================================================
