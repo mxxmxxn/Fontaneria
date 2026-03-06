@@ -1138,6 +1138,53 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================================
+   FAQ SECTION
+   ========================================================================== */
+
+.faq-section {
+  background-color: hsl(var(--background));
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+.faq-item {
+  background-color: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.faq-question {
+  font-size: 1rem;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  font-size: 0.9rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.7;
+}
+
+/* ============================================================================
    CONTACT SECTION
    ========================================================================== */
 
