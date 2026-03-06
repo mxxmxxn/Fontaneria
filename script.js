@@ -537,12 +537,27 @@ if (testimonialsScroller) {
   let direction = 1;
   let rafId = null;
   let isPaused = false;
-  const speed = 0.45;
+  const speedPxPerSec = 42;
+  let lastTs = 0;
+  let carry = 0;
 
-  const tick = () => {
+  const tick = (ts) => {
+    if (!lastTs) {
+      lastTs = ts;
+    }
+
+    const dt = (ts - lastTs) / 1000;
+    lastTs = ts;
+
     if (!isPaused) {
       const maxScroll = testimonialsScroller.scrollWidth - testimonialsScroller.clientWidth;
-      testimonialsScroller.scrollLeft += speed * direction;
+      carry += speedPxPerSec * dt;
+      const step = Math.floor(carry);
+
+      if (step > 0) {
+        carry -= step;
+        testimonialsScroller.scrollLeft += step * direction;
+      }
 
       if (testimonialsScroller.scrollLeft <= 0) {
         direction = 1;
@@ -559,6 +574,7 @@ if (testimonialsScroller) {
   };
 
   const resumeScroll = () => {
+    lastTs = 0;
     isPaused = false;
   };
 
@@ -573,6 +589,7 @@ if (testimonialsScroller) {
     if (document.hidden && rafId) {
       cancelAnimationFrame(rafId);
       rafId = null;
+      lastTs = 0;
     } else if (!document.hidden && !rafId) {
       rafId = requestAnimationFrame(tick);
     }
