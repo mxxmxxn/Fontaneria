@@ -70,13 +70,13 @@ const translations = {
     'portfolio-label': 'Portafolio',
     'portfolio-title': 'Nuestros trabajos recientes',
     'portfolio-cat-1': 'Trabajos',
-    'portfolio-title-1': 'Reparación baño',
+    'portfolio-title-1': 'Reforma de baño',
     'portfolio-cat-2': 'Trabajos',
-    'portfolio-title-2': 'Instalaciones electricas',
+    'portfolio-title-2': 'Instalación en vivienda',
     'portfolio-cat-3': 'Trabajos',
-    'portfolio-title-3': 'Averia electrica urgente',
+    'portfolio-title-3': 'Instalación y ajuste técnico',
     'portfolio-cat-4': 'Trabajos',
-    'portfolio-title-4': 'Mantenimiento y reparaciones',
+    'portfolio-title-4': 'Reparación de tuberías',
 
     // FAQ Section
     'faq-label': 'FAQ',
@@ -101,6 +101,26 @@ const translations = {
     'testimonial-3-author': 'Cliente verificado',
     'testimonial-4': '"Presupuesto claro y sin sorpresas. Todo fue rápido y quedó perfecto."',
     'testimonial-4-author': 'Cliente verificado',
+    'testimonial-5': '"Me cambiaron varios enchufes y dos interruptores en una tarde. Todo limpio y funcionando perfecto."',
+    'testimonial-5-author': 'Cliente verificado',
+    'testimonial-6': '"Teníamos una fuga en la cocina y la arreglaron el mismo día. Explicaron todo antes de empezar."',
+    'testimonial-6-author': 'Cliente verificado',
+    'testimonial-7': '"Nos instalaron sanitarios nuevos y dejaron todo nivelado. Muy cuidadosos con los acabados."',
+    'testimonial-7-author': 'Cliente verificado',
+    'testimonial-8': '"La avería eléctrica era intermitente y dieron con el fallo en la primera visita. Muy recomendables."',
+    'testimonial-8-author': 'Cliente verificado',
+    'testimonial-9': '"Nos instalaron un termo y revisaron la conexión eléctrica. Trabajo completo y bien explicado."',
+    'testimonial-9-author': 'Cliente verificado',
+    'testimonial-10': '"Mantenimiento anual de la vivienda: cuadro, grifos y ajustes varios. Muy cómodo tener todo en una sola visita."',
+    'testimonial-10-author': 'Cliente verificado',
+    'testimonial-11': '"Nos montaron una puerta interior y dejaron el cierre perfectamente ajustado. Puntuales y limpios."',
+    'testimonial-11-author': 'Cliente verificado',
+    'testimonial-12': '"Cambiaron luminarias del local y mejoró muchísimo la iluminación. Rápidos y ordenados."',
+    'testimonial-12-author': 'Cliente verificado',
+    'testimonial-13': '"Se nos rompió una llave de paso y vinieron esa misma mañana. Reparación rápida y buen precio."',
+    'testimonial-13-author': 'Cliente verificado',
+    'testimonial-14': '"Muy buena experiencia: revisaron varias incidencias del piso en una sola intervención. Repetiremos."',
+    'testimonial-14-author': 'Cliente verificado',
     
     // Contact Section
     'contact-title': '¿Necesitas electricista profesional?',
@@ -189,13 +209,13 @@ const translations = {
     'portfolio-label': 'Portfolio',
     'portfolio-title': 'Our recent work',
     'portfolio-cat-1': 'Works',
-    'portfolio-title-1': 'Bathroom repair',
+    'portfolio-title-1': 'Bathroom renovation',
     'portfolio-cat-2': 'Works',
-    'portfolio-title-2': 'Electrical installations',
+    'portfolio-title-2': 'Home installation',
     'portfolio-cat-3': 'Works',
-    'portfolio-title-3': 'Urgent electrical fault',
+    'portfolio-title-3': 'Installation and technical adjustment',
     'portfolio-cat-4': 'Works',
-    'portfolio-title-4': 'Maintenance and repairs',
+    'portfolio-title-4': 'Pipe repair',
 
     // FAQ Section
     'faq-label': 'FAQ',
@@ -220,6 +240,26 @@ const translations = {
     'testimonial-3-author': 'Verified client',
     'testimonial-4': '"Clear quote with no surprises. Everything was fast and perfectly done."',
     'testimonial-4-author': 'Verified client',
+    'testimonial-5': '"They replaced several sockets and two switches in one afternoon. Clean and perfectly finished."',
+    'testimonial-5-author': 'Verified client',
+    'testimonial-6': '"We had a kitchen leak and they fixed it the same day. Clear explanation before starting."',
+    'testimonial-6-author': 'Verified client',
+    'testimonial-7': '"They installed new sanitary fixtures and left everything perfectly aligned. Great attention to detail."',
+    'testimonial-7-author': 'Verified client',
+    'testimonial-8': '"The electrical fault was intermittent and they found it on the first visit. Highly recommended."',
+    'testimonial-8-author': 'Verified client',
+    'testimonial-9': '"They installed a water heater and checked the electrical connection. Complete and clear service."',
+    'testimonial-9-author': 'Verified client',
+    'testimonial-10': '"Annual home maintenance in one visit: panel, taps and adjustments. Very convenient."',
+    'testimonial-10-author': 'Verified client',
+    'testimonial-11': '"They installed an interior door and adjusted the closing perfectly. Punctual and tidy."',
+    'testimonial-11-author': 'Verified client',
+    'testimonial-12': '"They changed our shop lights and visibility improved a lot. Fast and organized team."',
+    'testimonial-12-author': 'Verified client',
+    'testimonial-13': '"A shut-off valve broke and they came the same morning. Fast repair and fair price."',
+    'testimonial-13-author': 'Verified client',
+    'testimonial-14': '"Great overall experience: they solved several issues in one intervention. We will call again."',
+    'testimonial-14-author': 'Verified client',
     
     // Contact Section
     'contact-title': 'Do you need a plumber?',
@@ -308,13 +348,13 @@ const translations = {
     'portfolio-label': 'Portfolio',
     'portfolio-title': 'Nos travaux récents',
     'portfolio-cat-1': 'Travaux',
-    'portfolio-title-1': 'Reparation salle de bain',
+    'portfolio-title-1': 'Renovation de salle de bain',
     'portfolio-cat-2': 'Travaux',
-    'portfolio-title-2': 'Installations electriques',
+    'portfolio-title-2': 'Installation dans le logement',
     'portfolio-cat-3': 'Travaux',
-    'portfolio-title-3': 'Panne electrique urgente',
+    'portfolio-title-3': 'Installation et ajustement technique',
     'portfolio-cat-4': 'Travaux',
-    'portfolio-title-4': 'Maintenance et reparations',
+    'portfolio-title-4': 'Reparation de tuyauterie',
 
     // FAQ Section
     'faq-label': 'FAQ',
@@ -339,6 +379,26 @@ const translations = {
     'testimonial-3-author': 'Client verifie',
     'testimonial-4': '"Devis clair et sans surprises. Tout a ete rapide et parfaitement realise."',
     'testimonial-4-author': 'Client verifie',
+    'testimonial-5': '"Ils ont remplace plusieurs prises et deux interrupteurs en une apres-midi. Travail propre et soigne."',
+    'testimonial-5-author': 'Client verifie',
+    'testimonial-6': '"Nous avions une fuite dans la cuisine et ils l\'ont reparee le jour meme. Explications claires."',
+    'testimonial-6-author': 'Client verifie',
+    'testimonial-7': '"Installation de nouveaux sanitaires avec finitions tres propres. Equipe serieuse et ponctuelle."',
+    'testimonial-7-author': 'Client verifie',
+    'testimonial-8': '"Panne electrique intermittente resolue des la premiere visite. Tres recommandable."',
+    'testimonial-8-author': 'Client verifie',
+    'testimonial-9': '"Installation d\'un chauffe-eau et verification electrique complete. Service tres professionnel."',
+    'testimonial-9-author': 'Client verifie',
+    'testimonial-10': '"Maintenance annuelle de la maison en une seule intervention. Tres pratique."',
+    'testimonial-10-author': 'Client verifie',
+    'testimonial-11': '"Pose d\'une porte interieure avec reglage parfait. Travail propre et ponctuel."',
+    'testimonial-11-author': 'Client verifie',
+    'testimonial-12': '"Changement des luminaires du local, resultat excellent. Intervention rapide."',
+    'testimonial-12-author': 'Client verifie',
+    'testimonial-13': '"Une vanne a casse et ils sont venus le matin meme. Reparation rapide et prix correct."',
+    'testimonial-13-author': 'Client verifie',
+    'testimonial-14': '"Tres bonne experience: plusieurs problemes resolus lors de la meme visite."',
+    'testimonial-14-author': 'Client verifie',
     
     // Contact Section
     'contact-title': 'Avez-vous besoin d\'un plombier?',
@@ -470,6 +530,54 @@ const testimonialCards = document.querySelectorAll('.testimonial-card');
 testimonialCards.forEach(card => {
   observer.observe(card);
 });
+
+// Horizontal auto-scroll for testimonials section
+const testimonialsScroller = document.getElementById('testimonialsScroller');
+if (testimonialsScroller) {
+  let direction = 1;
+  let rafId = null;
+  let isPaused = false;
+  const speed = 0.45;
+
+  const tick = () => {
+    if (!isPaused) {
+      const maxScroll = testimonialsScroller.scrollWidth - testimonialsScroller.clientWidth;
+      testimonialsScroller.scrollLeft += speed * direction;
+
+      if (testimonialsScroller.scrollLeft <= 0) {
+        direction = 1;
+      } else if (testimonialsScroller.scrollLeft >= maxScroll - 1) {
+        direction = -1;
+      }
+    }
+
+    rafId = requestAnimationFrame(tick);
+  };
+
+  const pauseScroll = () => {
+    isPaused = true;
+  };
+
+  const resumeScroll = () => {
+    isPaused = false;
+  };
+
+  testimonialsScroller.addEventListener('mouseenter', pauseScroll);
+  testimonialsScroller.addEventListener('mouseleave', resumeScroll);
+  testimonialsScroller.addEventListener('touchstart', pauseScroll, { passive: true });
+  testimonialsScroller.addEventListener('touchend', resumeScroll, { passive: true });
+
+  rafId = requestAnimationFrame(tick);
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden && rafId) {
+      cancelAnimationFrame(rafId);
+      rafId = null;
+    } else if (!document.hidden && !rafId) {
+      rafId = requestAnimationFrame(tick);
+    }
+  });
+}
 
 /* ============================================================================
    LIGHTBOX FUNCTIONALITY
