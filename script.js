@@ -527,9 +527,6 @@ portfolioCards.forEach(card => {
 
 // Observe all testimonial cards
 const testimonialCards = document.querySelectorAll('.testimonial-card');
-testimonialCards.forEach(card => {
-  observer.observe(card);
-});
 
 // Horizontal auto-scroll for testimonials section
 const testimonialsScroller = document.getElementById('testimonialsScroller');
@@ -798,6 +795,13 @@ if (testimonialsSection) {
         if (header) {
           header.style.animation = 'slideUp 0.6s ease-out forwards';
         }
+
+        // Animate testimonial cards with staggered fade-in from bottom
+        const cards = entry.target.querySelectorAll('.testimonial-card');
+        cards.forEach((card, index) => {
+          card.style.transitionDelay = `${index * 70}ms`;
+          card.classList.add('is-visible');
+        });
         
         testimonialsObserver.unobserve(entry.target);
       }
