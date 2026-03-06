@@ -1077,16 +1077,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonials-scroller {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow: hidden;
+  position: relative;
   padding-bottom: 0.5rem;
-}
-
-.testimonials-scroller::-webkit-scrollbar {
-  display: none;
 }
 
 .testimonials-grid {
@@ -1094,6 +1087,24 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: nowrap;
   gap: 1.5rem;
   width: max-content;
+  will-change: transform;
+}
+
+.testimonials-grid.marquee-running {
+  animation: testimonialsMarquee 56s linear infinite;
+}
+
+.testimonials-scroller:hover .testimonials-grid.marquee-running {
+  animation-play-state: paused;
+}
+
+@keyframes testimonialsMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .testimonial-card {

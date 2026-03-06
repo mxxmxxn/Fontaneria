@@ -528,74 +528,30 @@ portfolioCards.forEach(card => {
 // Observe all testimonial cards
 const testimonialCards = document.querySelectorAll('.testimonial-card');
 
-// Horizontal auto-scroll for testimonials section
-const testimonialsScroller = document.getElementById('testimonialsScroller');
-if (testimonialsScroller) {
-  const stepPx = 1;
-  const intervalMs = 18;
-  let autoScrollTimer = null;
-  let resumeTimeout = null;
+function initTestimonialsMarquee() {
+  const scroller = document.getElementById('testimonialsScroller');
+  const grid = scroller?.querySelector('.testimonials-grid');
 
-  const startAutoScroll = () => {
-    if (autoScrollTimer) {
-      return;
-    }
+  if (!scroller || !grid || scroller.dataset.marqueeInit === 'true') {
+    return;
+  }
 
-    autoScrollTimer = setInterval(() => {
-      const maxScroll = testimonialsScroller.scrollWidth - testimonialsScroller.clientWidth;
-      if (maxScroll <= 0) {
-        return;
-      }
+  const originalCards = Array.from(grid.querySelectorAll('.testimonial-card'));
+  if (originalCards.length < 2) {
+    return;
+  }
 
-      if (testimonialsScroller.scrollLeft >= maxScroll - 1) {
-        testimonialsScroller.scrollLeft = 0;
-      } else {
-        testimonialsScroller.scrollLeft += stepPx;
-      }
-    }, intervalMs);
-  };
-
-  const stopAutoScroll = () => {
-    if (autoScrollTimer) {
-      clearInterval(autoScrollTimer);
-      autoScrollTimer = null;
-    }
-  };
-
-  const resumeAfterDelay = () => {
-    if (resumeTimeout) {
-      clearTimeout(resumeTimeout);
-    }
-
-    resumeTimeout = setTimeout(() => {
-      startAutoScroll();
-    }, 1200);
-  };
-
-  testimonialsScroller.addEventListener('touchstart', stopAutoScroll, { passive: true });
-  testimonialsScroller.addEventListener('touchend', resumeAfterDelay, { passive: true });
-  testimonialsScroller.addEventListener('wheel', () => {
-    stopAutoScroll();
-    resumeAfterDelay();
-  }, { passive: true });
-
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-      stopAutoScroll();
-    } else {
-      startAutoScroll();
-    }
+  // Duplicate cards once so CSS marquee can loop seamlessly.
+  originalCards.forEach(card => {
+    const clone = card.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    grid.appendChild(clone);
   });
 
-  window.addEventListener('resize', () => {
-    const maxScroll = testimonialsScroller.scrollWidth - testimonialsScroller.clientWidth;
-    if (testimonialsScroller.scrollLeft > maxScroll) {
-      testimonialsScroller.scrollLeft = Math.max(0, maxScroll);
-    }
-  });
-
-  startAutoScroll();
+  scroller.dataset.marqueeInit = 'true';
 }
+
+initTestimonialsMarquee();
 
 /* ============================================================================
    LIGHTBOX FUNCTIONALITY
@@ -806,6 +762,11 @@ if (testimonialsSection) {
           card.style.transitionDelay = `${index * 70}ms`;
           card.classList.add('is-visible');
         });
+
+        const grid = entry.target.querySelector('.testimonials-grid');
+        if (grid) {
+          grid.classList.add('marquee-running');
+        }
         
         testimonialsObserver.unobserve(entry.target);
       }
