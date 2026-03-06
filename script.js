@@ -25,9 +25,9 @@ const translations = {
     
     // About Section
     'about-label': 'Sobre mí',
-    'about-title': 'Electricista de confianza en tu zona',
-    'about-text-1': 'Con más de 15 años de experiencia en el sector eléctrico, he tenido el privilegio de trabajar con miles de clientes satisfechos. Mi compromiso es siempre entender tus necesidades y ofrecer soluciones personalizadas que se adapten a tu presupuesto y urgencia, priorizando tu seguridad.',
-    'about-text-2': 'Mantengo los más altos estándares de profesionalismo, puntualidad y seguridad eléctrica en cada trabajo. Creo que la confianza se gana con hechos: presupuestos honestos, trabajos bien hechos y garantía en mis reparaciones. Esa es mi promesa.',
+    'about-title': 'Equipo de reparaciones de confianza en Alicante',
+    'about-text-1': 'Con más de 15 años de experiencia en reparaciones generales, ayudamos cada semana a familias y negocios de Alicante con soluciones rapidas, claras y eficaces. Nos adaptamos a tu urgencia, a tu presupuesto y al tipo de trabajo que necesitas.',
+    'about-text-2': 'Trabajamos con profesionalidad, puntualidad y atencion al detalle en electricidad, fontaneria, instalaciones y mantenimiento. La confianza se gana con hechos: diagnostico honesto, presupuesto sin sorpresas y reparaciones bien hechas desde la primera visita.',
     'stat-1-value': '15+',
     'stat-1-label': 'Años experiencia',
     'stat-2-value': '2.000+',
@@ -144,9 +144,9 @@ const translations = {
     
     // About Section
     'about-label': 'About Me',
-    'about-title': 'Trusted Plumber in Your Area',
-    'about-text-1': 'With over 15 years of experience in the repairs sector, I have had the privilege of working with thousands of satisfied customers in Alicante and surrounding areas. My commitment is always to understand your needs and offer personalized solutions that fit your budget and urgency.',
-    'about-text-2': 'I maintain the highest standards of professionalism, punctuality and transparency in every job. I believe that trust is earned through facts: honest quotes, well-done work and guarantee in my repairs. That is my promise.',
+    'about-title': 'Trusted General Repairs Team in Alicante',
+    'about-text-1': 'With more than 15 years of experience in general repairs, we help families and businesses across Alicante with fast, clear and effective solutions. We adapt to your urgency, your budget and the type of service you need.',
+    'about-text-2': 'We work with professionalism, punctuality and attention to detail in electrical work, plumbing, installations and maintenance. Trust is earned through facts: honest diagnosis, clear quotes and repairs done right from the first visit.',
     'stat-1-value': '15+',
     'stat-1-label': 'Years experience',
     'stat-2-value': '2.000+',
@@ -263,9 +263,9 @@ const translations = {
     
     // About Section
     'about-label': 'À propos de moi',
-    'about-title': 'Plombier de confiance dans votre région',
-    'about-text-1': 'Avec plus de 15 ans d\'expérience dans le secteur des reparations, j\'ai eu le privilège de travailler avec des milliers de clients satisfaits à Alicante et dans les environs. Mon engagement est toujours de comprendre vos besoins et de proposer des solutions personnalisées adaptées à votre budget et à votre urgence.',
-    'about-text-2': 'Je maintiens les plus hauts standards de professionnalisme, de ponctualité et de transparence dans chaque travail. Je crois que la confiance se gagne par les faits : des devis honnêtes, un travail bien fait et une garantie sur mes réparations. C\'est ma promesse.',
+    'about-title': 'Equipe de reparations de confiance a Alicante',
+    'about-text-1': 'Avec plus de 15 ans d\'experience en reparations generales, nous aidons chaque semaine des familles et des entreprises d\'Alicante avec des solutions rapides, claires et efficaces. Nous nous adaptons a votre urgence, votre budget et votre besoin.',
+    'about-text-2': 'Nous travaillons avec professionnalisme, ponctualite et souci du detail en electricite, plomberie, installations et maintenance. La confiance se gagne par les faits : diagnostic honnete, devis clair et reparations bien faites des la premiere visite.',
     'stat-1-value': '15+',
     'stat-1-label': 'Années d\'expérience',
     'stat-2-value': '2.000+',
