@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://reparacion-alicante.com/sitemap.xml
+Sitemap: https://fontaneria-alicante-24h.com/sitemap.xml
