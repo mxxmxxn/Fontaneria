@@ -137,6 +137,19 @@ const translations = {
     'contact-whatsapp-btn': 'Contactar por WhatsApp',
     'contact-call-btn': 'Llamar ahora',
     
+    // Tools & Equipment Section
+    'tools-label': 'Herramientas',
+    'tools-title': 'Los mejores equipos del mercado',
+    'tools-subtitle': 'Equipamiento profesional de última generación',
+    'tools-text': 'Contamos con furgoneta completamente equipada con las herramientas más modernas y eficientes del mercado. Todos nuestros equipos son marcas premium y se mantienen en perfecto estado.',
+    'tools-feature-1': 'Equipos de detección de fugas de última tecnología',
+    'tools-feature-2': 'Desatascadores profesionales y de alta potencia',
+    'tools-feature-3': 'Herramientas especializadas para cada tipo de trabajo',
+    'tools-feature-4': 'Tuberías y accesorios de marcas líderes',
+    'tools-feature-5': 'Equipos de seguridad e higiene certificados',
+    'tools-feature-6': 'Mantenimiento regular de toda la maquinaria',
+    'tools-conclusion': 'Invertimos en los mejores equipos para ofrecerte reparaciones de máxima calidad. Esto garantiza trabajos duraderos, eficientes y sin sorpresas.',
+    
     // Footer
     'footer-brand': 'Reparaciones Alicante',
     'footer-subtitle': 'Servicio profesional de reparaciones generales',
@@ -276,6 +289,19 @@ const translations = {
     'contact-whatsapp-btn': 'Contact via WhatsApp',
     'contact-call-btn': 'Call Now',
     
+    // Tools & Equipment Section
+    'tools-label': 'Tools',
+    'tools-title': 'The best equipment on the market',
+    'tools-subtitle': 'Professional equipment of the latest generation',
+    'tools-text': 'We have a fully equipped van with the most modern and efficient tools on the market. All our equipment is premium brands and kept in perfect condition.',
+    'tools-feature-1': 'Latest technology leak detection equipment',
+    'tools-feature-2': 'Professional and high-power drain cleaners',
+    'tools-feature-3': 'Specialized tools for every type of work',
+    'tools-feature-4': 'Pipes and accessories from leading brands',
+    'tools-feature-5': 'Safety and hygiene equipment certified',
+    'tools-feature-6': 'Regular maintenance of all machinery',
+    'tools-conclusion': 'We invest in the best equipment to offer you maximum quality repairs. This guarantees durable, efficient and hassle-free work.',
+    
     // Footer
     'footer-brand': 'Repairs Alicante',
     'footer-subtitle': 'Professional general repairs service',
@@ -414,6 +440,19 @@ const translations = {
     'contact-hours-value': 'L-V 8:00-20:00 · Urgences 24h',
     'contact-whatsapp-btn': 'Contacter par WhatsApp',
     'contact-call-btn': 'Appelez maintenant',
+    
+    // Tools & Equipment Section
+    'tools-label': 'Outils',
+    'tools-title': 'Les meilleurs équipements du marché',
+    'tools-subtitle': 'Équipement professionnel de dernière génération',
+    'tools-text': 'Nous disposons d\'une camionnette entièrement équipée avec les outils les plus modernes et efficaces du marché. Tous nos équipements sont de marques premium et maintenus en parfait état.',
+    'tools-feature-1': 'Équipements de détection de fuites dernière technologie',
+    'tools-feature-2': 'Déboucheurs professionnels et haute puissance',
+    'tools-feature-3': 'Outils spécialisés pour chaque type de travail',
+    'tools-feature-4': 'Tuyauterie et accessoires de marques leaders',
+    'tools-feature-5': 'Équipements de sécurité et hygiène certifiés',
+    'tools-feature-6': 'Entretien régulier de toute la machinerie',
+    'tools-conclusion': 'Nous investissons dans les meilleurs équipements pour vous offrir des réparations de qualité maximale. Cela garantit des travaux durables, efficaces et sans surprise.',
     
     // Footer
     'footer-brand': 'Reparations Alicante',
