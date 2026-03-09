@@ -17,17 +17,17 @@ const translations = {
     
     // Hero Section
     'servicio-24h': 'Servicio 24 horas · Respuesta inmediata',
-    'hero-title': 'Reparaciones generales <br>rapidas y confiables',
-    'hero-title-highlight': 'rapidas y<br>confiables',
-    'hero-subtitle': 'Equipo profesional de reparaciones generales con más de 15 años de experiencia. Electricidad, fontanería, instalaciones y mantenimiento en Alicante, España.',
+    'hero-title': 'Fontanero en Alicante <br>especializado y<br>confiable',
+    'hero-title-highlight': 'especializado y<br>confiable',
+    'hero-subtitle': 'Fontanero profesional especializado en reparación de fugas, cambio de grifos, sanitarios y desagües. Más de 15 años de experiencia con servicio urgente 24h en Alicante.',
     'btn-whatsapp': 'Contactar por WhatsApp',
     'btn-contactar': 'Contactar',
     
     // About Section
     'about-label': 'Sobre mí',
-    'about-title': 'Equipo de reparaciones de confianza en Alicante',
-    'about-text-1': 'Con más de 15 años de experiencia en reparaciones generales, ayudamos cada semana a familias y negocios de Alicante con soluciones rapidas, claras y eficaces. Nos adaptamos a tu urgencia, a tu presupuesto y al tipo de trabajo que necesitas.',
-    'about-text-2': 'Trabajamos con profesionalidad, puntualidad y atencion al detalle en electricidad, fontaneria, instalaciones y mantenimiento. La confianza se gana con hechos: diagnostico honesto, presupuesto sin sorpresas y reparaciones bien hechas desde la primera visita.',
+    'about-title': 'Fontanero especializado de confianza en Alicante',
+    'about-text-1': 'Con más de 15 años de experiencia especializado en fontanería, ayudamos cada semana a familias y negocios de Alicante con reparación de fugas, cambio de grifos, instalación de sanitarios y mantenimiento hidráulico. También ofrecemos servicios de electricidad y mantenimiento general.',
+    'about-text-2': 'Trabajamos con profesionalidad, puntualidad y atención al detalle en fontanería, tuberías, desagües y sistemas hidráulicos. Ofrecemos también servicios complementarios de electricidad y mantenimiento. La confianza se gana con hechos: diagnóstico honesto, presupuesto sin sorpresas y reparaciones bien hechas desde la primera visita.',
     'stat-1-value': '15+',
     'stat-1-label': 'Años experiencia',
       'stat-2-value': '1000+',
@@ -123,8 +123,8 @@ const translations = {
     'testimonial-14-author': 'Cliente verificado',
     
     // Contact Section
-    'contact-title': '¿Necesitas electricista profesional?',
-    'contact-subtitle': 'No dudes en contactarme, te responderé rápidamente',
+    'contact-title': '¿Necesitas fontanero o cualquier reparación?',
+    'contact-subtitle': 'Especializado en fontanería. Tambien realizamos electricidad y mantenimiento general. Contacta sin compromiso',
     'contact-phone-label': 'Teléfono',
     'contact-phone-value': '689 200 982',
     'contact-whatsapp-label': 'WhatsApp',
@@ -151,11 +151,11 @@ const translations = {
     'tools-conclusion': 'Invertimos en los mejores equipos para ofrecerte reparaciones de máxima calidad. Esto garantiza trabajos duraderos, eficientes y sin sorpresas.',
     
     // Footer
-    'footer-brand': 'Reparaciones Alicante',
-    'footer-subtitle': 'Servicio profesional de reparaciones generales',
+    'footer-brand': 'Fontanero Alicante 24h',
+    'footer-subtitle': 'Servicio profesional de fontanería y reparaciones en Alicante',
     'footer-privacy': 'Política de privacidad',
     'footer-cookies': 'Cookies',
-    'footer-copyright': 'Reparaciones Alicante. Todos los derechos reservados.'
+    'footer-copyright': 'Fontanero Alicante 24h. Todos los derechos reservados.'
   },
   en: {
     // Navigation
@@ -169,17 +169,17 @@ const translations = {
     
     // Hero Section
     'servicio-24h': '24-hour Service · Immediate Response',
-    'hero-title': 'General home repairs<br>you can trust',
-    'hero-title-highlight': 'you can<br>trust',
-    'hero-subtitle': 'Professional general repairs team with more than 15 years of experience. Electrical work, plumbing, installations and maintenance in Alicante, Spain.',
+    'hero-title': 'Professional Plumber in Alicante<br>specialized and<br>reliable',
+    'hero-title-highlight': 'specialized and<br>reliable',
+    'hero-subtitle': 'Professional plumber specialized in leak repair, tap replacement, sanitary fixtures and drains. More than 15 years of experience with 24-hour emergency service in Alicante.',
     'btn-whatsapp': 'Contact via WhatsApp',
     'btn-contactar': 'Contact',
     
     // About Section
     'about-label': 'About Me',
-    'about-title': 'Trusted General Repairs Team in Alicante',
-    'about-text-1': 'With more than 15 years of experience in general repairs, we help families and businesses across Alicante with fast, clear and effective solutions. We adapt to your urgency, your budget and the type of service you need.',
-    'about-text-2': 'We work with professionalism, punctuality and attention to detail in electrical work, plumbing, installations and maintenance. Trust is earned through facts: honest diagnosis, clear quotes and repairs done right from the first visit.',
+    'about-title': 'Trusted Specialist Plumber in Alicante',
+    'about-text-1': 'With more than 15 years specialized in plumbing, we help families and businesses across Alicante with leak repair, tap replacement, sanitary installation and hydraulic maintenance. We also offer electrical and general maintenance services.',
+    'about-text-2': 'We work with professionalism, punctuality and attention to detail in plumbing, pipes, drains and hydraulic systems. We also offer complementary electrical and maintenance services. Trust is earned through facts: honest diagnosis, clear quotes and repairs done right from the first visit.',
     'stat-1-value': '15+',
     'stat-1-label': 'Years experience',
       'stat-2-value': '1000+',
@@ -275,8 +275,8 @@ const translations = {
     'testimonial-14-author': 'Verified client',
     
     // Contact Section
-    'contact-title': 'Do you need a plumber?',
-    'contact-subtitle': 'Don\'t hesitate to contact me, I will respond quickly',
+    'contact-title': 'Need a plumber or any repair?',
+    'contact-subtitle': 'Specialized in plumbing. We also perform electrical and general maintenance. Contact us without obligation',
     'contact-phone-label': 'Phone',
     'contact-phone-value': '689 200 982',
     'contact-whatsapp-label': 'WhatsApp',
@@ -303,11 +303,11 @@ const translations = {
     'tools-conclusion': 'We invest in the best equipment to offer you maximum quality repairs. This guarantees durable, efficient and hassle-free work.',
     
     // Footer
-    'footer-brand': 'Repairs Alicante',
-    'footer-subtitle': 'Professional general repairs service',
+    'footer-brand': 'Plumber Alicante 24h',
+    'footer-subtitle': 'Professional plumbing and repair service in Alicante',
     'footer-privacy': 'Privacy Policy',
     'footer-cookies': 'Cookies',
-    'footer-copyright': 'Repairs Alicante. All rights reserved.'
+    'footer-copyright': 'Plumber Alicante 24h. All rights reserved.'
   },
   fr: {
     // Navigation
@@ -321,17 +321,17 @@ const translations = {
     
     // Hero Section
     'servicio-24h': 'Service 24 heures · Réponse immédiate',
-    'hero-title': 'Reparations generales<br>rapides et fiables',
-    'hero-title-highlight': 'rapides et<br>fiables',
-    'hero-subtitle': 'Equipe professionnelle de reparations generales avec plus de 15 ans d\'experience. Electricite, plomberie, installations et maintenance a Alicante, Espagne.',
+    'hero-title': 'Plombier professionnel a Alicante<br>specialise et<br>fiable',
+    'hero-title-highlight': 'specialise et<br>fiable',
+    'hero-subtitle': 'Plombier professionnel specialise en reparation de fuites, changement de robinetterie, sanitaires et evacuations. Plus de 15 ans d\'experience avec service d\'urgences 24h a Alicante.',
     'btn-whatsapp': 'Contacter par WhatsApp',
     'btn-contactar': 'Contacter',
     
     // About Section
     'about-label': 'À propos de moi',
-    'about-title': 'Equipe de reparations de confiance a Alicante',
-    'about-text-1': 'Avec plus de 15 ans d\'experience en reparations generales, nous aidons chaque semaine des familles et des entreprises d\'Alicante avec des solutions rapides, claires et efficaces. Nous nous adaptons a votre urgence, votre budget et votre besoin.',
-    'about-text-2': 'Nous travaillons avec professionnalisme, ponctualite et souci du detail en electricite, plomberie, installations et maintenance. La confiance se gagne par les faits : diagnostic honnete, devis clair et reparations bien faites des la premiere visite.',
+    'about-title': 'Plombier spécialisé de confiance a Alicante',
+    'about-text-1': 'Avec plus de 15 ans specialise en plomberie, nous aidons chaque semaine des familles et des entreprises d\'Alicante avec reparation de fuites, changement de robinetterie, installation de sanitaires et maintenance hydraulique. Nous proposons aussi des services d\'electricite et d\'entretien general.',
+    'about-text-2': 'Nous travaillons avec professionnalisme, ponctualite et souci du detail en plomberie, tuyauterie, evacuations et systemes hydrauliques. Nous proposons egalement des services complementaires d\'electricite et d\'entretien. La confiance se gagne par les faits : diagnostic honnete, devis clair et reparations bien faites des la premiere visite.',
     'stat-1-value': '15+',
     'stat-1-label': 'Années d\'expérience',
       'stat-2-value': '1000+',
@@ -427,8 +427,8 @@ const translations = {
     'testimonial-14-author': 'Client verifie',
     
     // Contact Section
-    'contact-title': 'Avez-vous besoin d\'un plombier?',
-    'contact-subtitle': 'N\'hésitez pas à me contacter, je vous répondrai rapidement',
+    'contact-title': 'Besoin d\'un plombier ou d\'une réparation?',
+    'contact-subtitle': 'Spécialisé en plomberie. Nous effectuons aussi l\'électricité et l\'entretien général. Contactez-nous sans engagement',
     'contact-phone-label': 'Téléphone',
     'contact-phone-value': '689 200 982',
     'contact-whatsapp-label': 'WhatsApp',
@@ -455,11 +455,11 @@ const translations = {
     'tools-conclusion': 'Nous investissons dans les meilleurs équipements pour vous offrir des réparations de qualité maximale. Cela garantit des travaux durables, efficaces et sans surprise.',
     
     // Footer
-    'footer-brand': 'Reparations Alicante',
-    'footer-subtitle': 'Service professionnel de reparations generales',
+    'footer-brand': 'Plombier Alicante 24h',
+    'footer-subtitle': 'Service professionnel de plomberie et reparations a Alicante',
     'footer-privacy': 'Politique de confidentialité',
     'footer-cookies': 'Cookies',
-    'footer-copyright': 'Reparations Alicante. Tous les droits reserves.'
+    'footer-copyright': 'Plombier Alicante 24h. Tous les droits reserves.'
   }
 };
 
