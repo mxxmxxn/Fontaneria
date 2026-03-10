@@ -17,9 +17,9 @@ const translations = {
     
     // Hero Section
     'servicio-24h': 'Servicio 24 horas · Respuesta inmediata',
+    'hero-fontanero': 'Fontanero',
     'hero-title': 'Fontanero en Alicante <br>especializado y<br>confiable',
     'hero-title-highlight': 'especializado y<br>confiable',
-    'hero-services': 'También realizamos <span class="services-accent">Electricidad · Mantenimiento</span>',
     'hero-subtitle': 'Fontanero profesional especializado en reparación de fugas, cambio de grifos, sanitarios y desagües. Más de 15 años de experiencia con servicio urgente 24h en Alicante.',
     'btn-whatsapp': 'Contactar por WhatsApp',
     'btn-contactar': 'Contactar',
@@ -170,9 +170,9 @@ const translations = {
     
     // Hero Section
     'servicio-24h': '24-hour Service · Immediate Response',
+    'hero-fontanero': 'Plumber',
     'hero-title': 'Professional Plumber in Alicante<br>specialized and<br>reliable',
     'hero-title-highlight': 'specialized and<br>reliable',
-    'hero-services': 'We also perform <span class="services-accent">Electrical · Maintenance</span>',
     'hero-subtitle': 'Professional plumber specialized in leak repair, tap replacement, sanitary fixtures and drains. More than 15 years of experience with 24-hour emergency service in Alicante.',
     'btn-whatsapp': 'Contact via WhatsApp',
     'btn-contactar': 'Contact',
@@ -323,9 +323,9 @@ const translations = {
     
     // Hero Section
     'servicio-24h': 'Service 24 heures · Réponse immédiate',
+    'hero-fontanero': 'Plombier',
     'hero-title': 'Plombier professionnel a Alicante<br>specialise et<br>fiable',
     'hero-title-highlight': 'specialise et<br>fiable',
-    'hero-services': 'Nous effectuons également <span class="services-accent">Electricité · Entretien</span>',
     'hero-subtitle': 'Plombier professionnel specialise en reparation de fuites, changement de robinetterie, sanitaires et evacuations. Plus de 15 ans d\'experience avec service d\'urgences 24h a Alicante.',
     'btn-whatsapp': 'Contacter par WhatsApp',
     'btn-contactar': 'Contacter',
