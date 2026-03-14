@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fontaneria-alicante-24h.com/sitemap.xml
+# Sitemaps para cada dominio
+Sitemap: https://fontaneria-alicante-24.com/sitemap.xml
+Sitemap: https://www.fontaneria-benidorm.com/sitemap.xml
+Sitemap: https://www.urgencias-alicante-24.com/sitemap.xml
+
+# Permitir acceso a assets
+Allow: /assets/
+
+# Descargar delay para bots
+Crawl-delay: 1
