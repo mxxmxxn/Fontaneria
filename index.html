@@ -56,7 +56,9 @@
             },
             "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Alicante",
+                "streetAddress": "Av. de Juan XXIII, 8",
+                "addressLocality": "Villena",
+                "addressRegion": "Alicante",
                 "addressCountry": "ES"
             },
             "openingHoursSpecification": [
@@ -240,16 +242,16 @@
     <div id="cookieModal" class="cookie-modal" style="display: none;">
         <div class="cookie-modal-content">
             <div class="cookie-modal-header">
-                <h2>🍪 Política de Cookies</h2>
+                <h2 data-i18n="cookie-title">🍪 Política de Cookies</h2>
             </div>
             <div class="cookie-modal-body">
-                <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Algunas cookies son necesarias para el funcionamiento básico, mientras que otras nos ayudan a analizar el tráfico y mostrar anuncios relevantes.</p>
-                <p><strong>¿Aceptas el uso de cookies?</strong></p>
+                <p data-i18n="cookie-text-1">Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Algunas cookies son necesarias para el funcionamiento básico, mientras que otras nos ayudan a analizar el tráfico y mostrar anuncios relevantes.</p>
+                <p><strong data-i18n="cookie-text-2">¿Aceptas el uso de cookies?</strong></p>
             </div>
             <div class="cookie-modal-footer">
-                <button onclick="rejectCookies()" class="cookie-btn cookie-reject">Rechazar</button>
-                <button onclick="goToCookiePolicy()" class="cookie-btn cookie-policy">Más información</button>
-                <button onclick="acceptCookies()" class="cookie-btn cookie-accept">Aceptar</button>
+                <button onclick="rejectCookies()" class="cookie-btn cookie-reject" data-i18n="cookie-reject">Rechazar</button>
+                <button onclick="goToCookiePolicy()" class="cookie-btn cookie-policy" data-i18n="cookie-more-info">Más información</button>
+                <button onclick="acceptCookies()" class="cookie-btn cookie-accept" data-i18n="cookie-accept">Aceptar</button>
             </div>
         </div>
     </div>
@@ -266,7 +268,7 @@
             <ul class="navbar-menu desktop">
                 <li><a href="#hero" class="nav-link" data-i18n="nav-inicio">Inicio</a></li>
                 <li><a href="#about" class="nav-link" data-i18n="nav-about">Sobre mí</a></li>
-                <li><a href="#tools" class="nav-link">Equipos</a></li>
+                <li><a href="#tools" class="nav-link" data-i18n="nav-tools">Equipos</a></li>
                 <li><a href="#services" class="nav-link" data-i18n="nav-services">Servicios</a></li>
                 <li><a href="#portfolio" class="nav-link" data-i18n="nav-portfolio">Trabajos</a></li>
                 <li><a href="#testimonials" class="nav-link" data-i18n="nav-testimonials">Opiniones</a></li>
@@ -308,13 +310,13 @@
         
         <!-- Mobile Menu -->
         <div class="mobile-menu hidden" id="mobileMenu">
-            <a href="#hero" class="mobile-nav-link">Inicio</a>
-            <a href="#about" class="mobile-nav-link">Sobre mí</a>
-            <a href="#tools" class="mobile-nav-link">Equipos</a>
-            <a href="#services" class="mobile-nav-link">Servicios</a>
-            <a href="#portfolio" class="mobile-nav-link">Trabajos</a>
-            <a href="#testimonials" class="mobile-nav-link">Opiniones</a>
-            <a href="#contact" class="mobile-nav-link">Contacto</a>
+            <a href="#hero" class="mobile-nav-link" data-i18n="nav-inicio">Inicio</a>
+            <a href="#about" class="mobile-nav-link" data-i18n="nav-about">Sobre mí</a>
+            <a href="#tools" class="mobile-nav-link" data-i18n="nav-tools">Equipos</a>
+            <a href="#services" class="mobile-nav-link" data-i18n="nav-services">Servicios</a>
+            <a href="#portfolio" class="mobile-nav-link" data-i18n="nav-portfolio">Trabajos</a>
+            <a href="#testimonials" class="mobile-nav-link" data-i18n="nav-testimonials">Opiniones</a>
+            <a href="#contact" class="mobile-nav-link" data-i18n="nav-contact">Contacto</a>
             <button class="mobile-cta-button" onclick="openWhatsApp()">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -365,38 +367,38 @@
 
             <div class="faq-grid">
                 <article class="faq-item">
-                    <h3 class="faq-question">Que servicios de fontanería realizas en Alicante?</h3>
-                    <p class="faq-answer">Reparación de fugas de agua, cambio de grifos, instalación de sanitarios, desatascos de tuberías, limpieza de conductos, detección de fugas mediante tecnología, reparación de calentadores y desagües. También ofrecemos servicios de electricidad y mantenimiento general.</p>
+                    <h3 class="faq-question" data-i18n="faq-q1">Que servicios de fontanería realizas en Alicante?</h3>
+                    <p class="faq-answer" data-i18n="faq-a1">Reparación de fugas de agua, cambio de grifos, instalación de sanitarios, desatascos de tuberías, limpieza de conductos, detección de fugas mediante tecnología, reparación de calentadores y desagües. También ofrecemos servicios de electricidad y mantenimiento general.</p>
                 </article>
 
                 <article class="faq-item">
-                    <h3 class="faq-question">Realizas desatascos de fontanería en Alicante?</h3>
-                    <p class="faq-answer">Si, realizamos desatascos de tuberías, desenganche de cañerías y limpieza profunda de conductos con equipos profesionales. Servicio disponible 24 horas.</p>
+                    <h3 class="faq-question" data-i18n="faq-q2">Realizas desatascos de fontanería en Alicante?</h3>
+                    <p class="faq-answer" data-i18n="faq-a2">Si, realizamos desatascos de tuberías, desenganche de cañerías y limpieza profunda de conductos con equipos profesionales. Servicio disponible 24 horas.</p>
                 </article>
 
                 <article class="faq-item">
-                    <h3 class="faq-question">Como detectas fugas de agua ocultas?</h3>
-                    <p class="faq-answer">Utilizamos tecnología de detección avanzada para localizar fugas sin necesidad de obras destructivas. Diagnosticamos el problema de forma precisa y eficiente.</p>
+                    <h3 class="faq-question" data-i18n="faq-q3">Como detectas fugas de agua ocultas?</h3>
+                    <p class="faq-answer" data-i18n="faq-a3">Utilizamos tecnología de detección avanzada para localizar fugas sin necesidad de obras destructivas. Diagnosticamos el problema de forma precisa y eficiente.</p>
                 </article>
 
                 <article class="faq-item">
-                    <h3 class="faq-question">Reparas calentadores y termotanques?</h3>
-                    <p class="faq-answer">Si, realizamos mantenimiento, reparación e instalación de calentadores, termotanques y sistemas de agua caliente con garantía de 3 meses.</p>
+                    <h3 class="faq-question" data-i18n="faq-q4">Reparas calentadores y termotanques?</h3>
+                    <p class="faq-answer" data-i18n="faq-a4">Si, realizamos mantenimiento, reparación e instalación de calentadores, termotanques y sistemas de agua caliente con garantía de 3 meses.</p>
                 </article>
 
                 <article class="faq-item">
-                    <h3 class="faq-question">Atendeis urgencias de fontanería 24 horas?</h3>
-                    <p class="faq-answer">Si, atendemos urgencias de fontanería las 24 horas con respuesta rápida para fugas, rotura de tuberías, desatascos y problemas hidráulicos inmediatos.</p>
+                    <h3 class="faq-question" data-i18n="faq-q5">Atendeis urgencias de fontanería 24 horas?</h3>
+                    <p class="faq-answer" data-i18n="faq-a5">Si, atendemos urgencias de fontanería las 24 horas con respuesta rápida para fugas, rotura de tuberías, desatascos y problemas hidráulicos inmediatos.</p>
                 </article>
 
                 <article class="faq-item">
-                    <h3 class="faq-question">Realizas trabajos de sanitarios y tuberías completos?</h3>
-                    <p class="faq-answer">Si, realizamos instalación segura de sanitarios, tuberías, inodoros, desagües y sistemas completos de fontanería con garantía de 3 meses.</p>
+                    <h3 class="faq-question" data-i18n="faq-q6">Realizas trabajos de sanitarios y tuberías completos?</h3>
+                    <p class="faq-answer" data-i18n="faq-a6">Si, realizamos instalación segura de sanitarios, tuberías, inodoros, desagües y sistemas completos de fontanería con garantía de 3 meses.</p>
                 </article>
 
                 <article class="faq-item">
-                    <h3 class="faq-question">Como solicito presupuesto de fontanería?</h3>
-                    <p class="faq-answer">Puedes contactar por WhatsApp o llamada al 689 200 982. Haremos presupuesto sin compromiso y responderemos en menos de 1 hora.</p>
+                    <h3 class="faq-question" data-i18n="faq-q7">Como solicito presupuesto de fontanería?</h3>
+                    <p class="faq-answer" data-i18n="faq-a7">Puedes contactar por WhatsApp o llamada al 689 200 982. Haremos presupuesto sin compromiso y responderemos en menos de 1 hora.</p>
                 </article>
             </div>
         </div>
@@ -573,9 +575,9 @@
                             <path d="M10 19h4"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Reparación de fugas de agua y grifos</h3>
-                    <p class="service-description">Detección y reparación de fugas en sistemas hidráulicos, cambio de grifos y reparación urgente 24h</p>
-                    <span class="service-price">Desde 90€/h</span>
+                    <h3 class="service-title" data-i18n="service-card-1-title">Reparación de fugas de agua y grifos</h3>
+                    <p class="service-description" data-i18n="service-card-1-desc">Detección y reparación de fugas en sistemas hidráulicos, cambio de grifos y reparación urgente 24h</p>
+                    <span class="service-price" data-i18n="service-card-1-price">Desde 90€/h</span>
                 </div>
                 
                 <!-- Service 2 - DESATASCOS -->
@@ -587,9 +589,9 @@
                             <path d="M12 7v10"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Desatascos de tuberías y cañerías</h3>
-                    <p class="service-description">Desenganche de tuberías, desatascos profundos y limpieza de conductos</p>
-                    <span class="service-price">Desde 100€</span>
+                    <h3 class="service-title" data-i18n="service-card-2-title">Desatascos de tuberías y cañerías</h3>
+                    <p class="service-description" data-i18n="service-card-2-desc">Desenganche de tuberías, desatascos profundos y limpieza de conductos</p>
+                    <span class="service-price" data-i18n="service-card-2-price">Desde 100€</span>
                 </div>
                 
                 <!-- Service 3 - SANITARIOS -->
@@ -602,9 +604,9 @@
                             <path d="M15 12h3"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Instalación de sanitarios y desagües</h3>
-                    <p class="service-description">Instalación segura de sanitarios, tuberías, inodoros y sistemas de desagüe</p>
-                    <span class="service-price">Desde 90€/h</span>
+                    <h3 class="service-title" data-i18n="service-card-3-title">Instalación de sanitarios y desagües</h3>
+                    <p class="service-description" data-i18n="service-card-3-desc">Instalación segura de sanitarios, tuberías, inodoros y sistemas de desagüe</p>
+                    <span class="service-price" data-i18n="service-card-3-price">Desde 90€/h</span>
                 </div>
                 
                 <!-- Service 4 - LIMPIEZA TUBERÍAS -->
@@ -616,9 +618,9 @@
                             <path d="M8 6V3h8v3"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Limpieza y mantenimiento de tuberías</h3>
-                    <p class="service-description">Limpieza periódica de tuberías, desincrustación y mantenimiento preventivo</p>
-                    <span class="service-price">Desde 80€</span>
+                    <h3 class="service-title" data-i18n="service-card-4-title">Limpieza y mantenimiento de tuberías</h3>
+                    <p class="service-description" data-i18n="service-card-4-desc">Limpieza periódica de tuberías, desincrustación y mantenimiento preventivo</p>
+                    <span class="service-price" data-i18n="service-card-4-price">Desde 80€</span>
                 </div>
                 
                 <!-- Service 5 - DETECCIÓN DE FUGAS -->
@@ -631,9 +633,9 @@
                             <path d="M12 6a6 6 0 0 1 0 12"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Detección de fugas mediante tecnología</h3>
-                    <p class="service-description">Detección avanzada de fugas ocultas sin obras, diagnóstico preciso de problemas</p>
-                    <span class="service-price">Presupuesto bajo demanda</span>
+                    <h3 class="service-title" data-i18n="service-card-5-title">Detección de fugas mediante tecnología</h3>
+                    <p class="service-description" data-i18n="service-card-5-desc">Detección avanzada de fugas ocultas sin obras, diagnóstico preciso de problemas</p>
+                    <span class="service-price" data-i18n="service-card-5-price">Presupuesto bajo demanda</span>
                 </div>
                 
                 <!-- Service 6 - CALENTADORES -->
@@ -645,9 +647,9 @@
                             <path d="M8 10h8"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Reparación de calentadores y termotanques</h3>
-                    <p class="service-description">Mantenimiento, reparación e instalación de equipos de agua caliente</p>
-                    <span class="service-price">Desde 95€/h</span>
+                    <h3 class="service-title" data-i18n="service-card-6-title">Reparación de calentadores y termotanques</h3>
+                    <p class="service-description" data-i18n="service-card-6-desc">Mantenimiento, reparación e instalación de equipos de agua caliente</p>
+                    <span class="service-price" data-i18n="service-card-6-price">Desde 95€/h</span>
                 </div>
                 
                 <!-- Service 7 - ELECTRICIDAD -->
@@ -657,9 +659,9 @@
                             <path d="M13 2L3 14h7l-1 8 10-12h-7z"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Instalaciones y reparaciones eléctricas</h3>
-                    <p class="service-description">Instalación de sistemas eléctricos seguros y reparaciones profesionales</p>
-                    <span class="service-price">Desde 90€/h</span>
+                    <h3 class="service-title" data-i18n="service-card-7-title">Instalaciones y reparaciones eléctricas</h3>
+                    <p class="service-description" data-i18n="service-card-7-desc">Instalación de sistemas eléctricos seguros y reparaciones profesionales</p>
+                    <span class="service-price" data-i18n="service-card-7-price">Desde 90€/h</span>
                 </div>
                 
                 <!-- Service 8 - ENCHUFES -->
@@ -672,9 +674,9 @@
                             <circle cx="17.5" cy="12" r="1"></circle>
                         </svg>
                     </div>
-                    <h3 class="service-title">Cambio de enchufes, interruptores y luminarias</h3>
-                    <p class="service-description">Reemplazo de enchufes, interruptores y sistemas de iluminación modernos</p>
-                    <span class="service-price">Desde 90€/h</span>
+                    <h3 class="service-title" data-i18n="service-card-8-title">Cambio de enchufes, interruptores y luminarias</h3>
+                    <p class="service-description" data-i18n="service-card-8-desc">Reemplazo de enchufes, interruptores y sistemas de iluminación modernos</p>
+                    <span class="service-price" data-i18n="service-card-8-price">Desde 90€/h</span>
                 </div>
                 
                 <!-- Service 9 - EMERGENCIAS ELÉCTRICAS -->
@@ -686,9 +688,9 @@
                             <path d="M12 12l3 3"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Averías eléctricas urgentes</h3>
-                    <p class="service-description">Servicio de emergencia para problemas eléctricos graves las 24 horas</p>
-                    <span class="service-price">Desde 90€/h</span>
+                    <h3 class="service-title" data-i18n="service-card-9-title">Averías eléctricas urgentes</h3>
+                    <p class="service-description" data-i18n="service-card-9-desc">Servicio de emergencia para problemas eléctricos graves las 24 horas</p>
+                    <span class="service-price" data-i18n="service-card-9-price">Desde 90€/h</span>
                 </div>
                 
                 <!-- Service 10 - MANTENIMIENTO -->
@@ -702,9 +704,9 @@
                             <rect x="4" y="4" width="16" height="16" rx="2"></rect>
                         </svg>
                     </div>
-                    <h3 class="service-title">Mantenimiento general</h3>
-                    <p class="service-description">Revisión periódica y mantenimiento preventivo de instalaciones</p>
-                    <span class="service-price">Desde 90€/h</span>
+                    <h3 class="service-title" data-i18n="service-card-10-title">Mantenimiento general</h3>
+                    <p class="service-description" data-i18n="service-card-10-desc">Revisión periódica y mantenimiento preventivo de instalaciones</p>
+                    <span class="service-price" data-i18n="service-card-10-price">Desde 90€/h</span>
                 </div>
 
                 <!-- Service 11 - PUERTAS -->
@@ -716,9 +718,9 @@
                             <path d="M17 8h4M17 12h4M17 16h4"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Instalación de puertas</h3>
-                    <p class="service-description">Montaje y ajuste de puertas interiores y blindadas</p>
-                    <span class="service-price">Desde 90€/h</span>
+                    <h3 class="service-title" data-i18n="service-card-11-title">Instalación de puertas</h3>
+                    <p class="service-description" data-i18n="service-card-11-desc">Montaje y ajuste de puertas interiores y blindadas</p>
+                    <span class="service-price" data-i18n="service-card-11-price">Desde 90€/h</span>
                 </div>
 
                 <!-- Service 12 - DESPLAZAMIENTO -->
@@ -731,9 +733,9 @@
                             <circle cx="18.5" cy="18.5" r="1.5"></circle>
                         </svg>
                     </div>
-                    <h3 class="service-title">Desplazamiento</h3>
-                    <p class="service-description">Coste de desplazamiento según distancia</p>
-                    <span class="service-price">40€</span>
+                    <h3 class="service-title" data-i18n="service-card-12-title">Desplazamiento</h3>
+                    <p class="service-description" data-i18n="service-card-12-desc">Coste de desplazamiento según distancia</p>
+                    <span class="service-price" data-i18n="service-card-12-price">40€</span>
                 </div>
             </div>
         </div>
@@ -1104,7 +1106,7 @@
                     </div>
                     <div class="contact-text">
                         <p class="contact-label" data-i18n="contact-location-label">Zona de trabajo</p>
-                        <p class="contact-value" data-i18n="contact-location-value">Alicante, España</p>
+                        <p class="contact-value" data-i18n="contact-location-value">Av. de Juan XXIII, 8, Villena, Alicante, España</p>
                     </div>
                 </div>
                 
@@ -1136,6 +1138,38 @@
                     </svg>
                     Llamar ahora
                 </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="mapa" class="map-section section-padding">
+        <div class="container map-container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="map-label">Ubicación</span>
+                <h2 class="section-title" data-i18n="map-title">Dónde estamos en Villena</h2>
+                <p class="section-subtitle" data-i18n="map-subtitle">Encuéntranos en Av. de Juan XXIII, 8, Villena, Alicante, España.</p>
+            </div>
+
+            <div class="map-frame-wrapper">
+                <iframe
+                    title="Mapa ubicación Fontanero Alicante 24h"
+                    src="https://www.google.com/maps?q=Av.%20de%20Juan%20XXIII%2C%208%2C%20Villena%2C%20Alicante%2C%20Espa%C3%B1a&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="map-frame">
+                </iframe>
+            </div>
+
+            <div class="map-actions">
+                <a
+                    href="https://www.google.com/maps?q=Av.%20de%20Juan%20XXIII%2C%208%2C%20Villena%2C%20Alicante%2C%20Espa%C3%B1a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-whatsapp-large"
+                    data-i18n="map-open">
+                    Abrir en Google Maps
+                </a>
             </div>
         </div>
     </section>

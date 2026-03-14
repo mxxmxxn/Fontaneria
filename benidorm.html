@@ -56,7 +56,9 @@
         },
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Benidorm",
+            "streetAddress": "Av. de Juan XXIII, 8",
+            "addressLocality": "Villena",
+            "addressRegion": "Alicante",
             "addressCountry": "ES"
         },
         "openingHoursSpecification": [
@@ -100,16 +102,16 @@
     <div id="cookieModal" class="cookie-modal" style="display: none;">
         <div class="cookie-modal-content">
             <div class="cookie-modal-header">
-                <h2>🍪 Política de Cookies</h2>
+                <h2 data-i18n="cookie-title">🍪 Política de Cookies</h2>
             </div>
             <div class="cookie-modal-body">
-                <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Algunas cookies son necesarias para el funcionamiento básico, mientras que otras nos ayudan a analizar el tráfico y mostrar anuncios relevantes.</p>
-                <p><strong>¿Aceptas el uso de cookies?</strong></p>
+                <p data-i18n="cookie-text-1">Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Algunas cookies son necesarias para el funcionamiento básico, mientras que otras nos ayudan a analizar el tráfico y mostrar anuncios relevantes.</p>
+                <p><strong data-i18n="cookie-text-2">¿Aceptas el uso de cookies?</strong></p>
             </div>
             <div class="cookie-modal-footer">
-                <button onclick="rejectCookies()" class="cookie-btn cookie-reject">Rechazar</button>
-                <button onclick="goToCookiePolicy()" class="cookie-btn cookie-policy">Más información</button>
-                <button onclick="acceptCookies()" class="cookie-btn cookie-accept">Aceptar</button>
+                <button onclick="rejectCookies()" class="cookie-btn cookie-reject" data-i18n="cookie-reject">Rechazar</button>
+                <button onclick="goToCookiePolicy()" class="cookie-btn cookie-policy" data-i18n="cookie-more-info">Más información</button>
+                <button onclick="acceptCookies()" class="cookie-btn cookie-accept" data-i18n="cookie-accept">Aceptar</button>
             </div>
         </div>
     </div>
@@ -118,23 +120,23 @@
         <div class="navbar-container">
             <div class="navbar-logo">
                 <img src="assets/icono_web.png" alt="Fontanero Benidorm 24h" class="logo-image">
-                <span class="logo-text">Fontanero Benidorm 24h</span>
+                <span class="logo-text" data-i18n="b-logo-text">Fontanero Benidorm 24h</span>
             </div>
             
             <!-- Desktop Menu -->
             <ul class="navbar-menu desktop">
-                <li><a href="#hero" class="nav-link">Inicio</a></li>
-                <li><a href="#about" class="nav-link">Sobre mí</a></li>
-                <li><a href="#services" class="nav-link">Servicios</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
-                <li><a href="index.html" class="nav-link" style="color: #FF8C42;">↗ Alicante</a></li>
+                <li><a href="#hero" class="nav-link" data-i18n="nav-inicio">Inicio</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav-about">Sobre mí</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav-services">Servicios</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contacto</a></li>
+                <li><a href="index.html" class="nav-link" style="color: #FF8C42;" data-i18n="b-nav-alicante">↗ Alicante</a></li>
             </ul>
             
             <button class="cta-button desktop" onclick="openWhatsApp()">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
-                <span class="cta-text">Llamar ahora</span>
+                <span class="cta-text" data-i18n="cta-button">Llamar ahora</span>
             </button>
             
             <!-- Mobile Menu Toggle -->
@@ -152,16 +154,16 @@
         </div>
 
         <div class="mobile-menu hidden" id="mobileMenu">
-            <a href="#hero" class="mobile-nav-link">Inicio</a>
-            <a href="#about" class="mobile-nav-link">Sobre mí</a>
-            <a href="#services" class="mobile-nav-link">Servicios</a>
-            <a href="#contact" class="mobile-nav-link">Contacto</a>
-            <a href="index.html" class="mobile-nav-link">Alicante</a>
+            <a href="#hero" class="mobile-nav-link" data-i18n="nav-inicio">Inicio</a>
+            <a href="#about" class="mobile-nav-link" data-i18n="nav-about">Sobre mí</a>
+            <a href="#services" class="mobile-nav-link" data-i18n="nav-services">Servicios</a>
+            <a href="#contact" class="mobile-nav-link" data-i18n="nav-contact">Contacto</a>
+            <a href="index.html" class="mobile-nav-link" data-i18n="b-nav-alicante-mobile">Alicante</a>
             <button class="mobile-cta-button" onclick="openWhatsApp()">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
-                Llamar ahora
+                <span data-i18n="cta-button">Llamar ahora</span>
             </button>
         </div>
     </nav>
@@ -174,7 +176,7 @@
         <div class="hero-content">
             <div class="hero-badge slide-up">
                 <span class="badge-dot"></span>
-                <span class="badge-text">Servicio 24 horas · Respuesta inmediata en Benidorm</span>
+                <span class="badge-text" data-i18n="b-hero-badge">Servicio 24 horas · Respuesta inmediata en Benidorm</span>
             </div>
             
             <h1 class="hero-title slide-up" style="animation-delay: 0.1s;">
@@ -182,7 +184,7 @@
             </h1>
             
             <p class="hero-subtitle slide-up" style="animation-delay: 0.2s;">
-                Fontanero profesional especializado en reparación de fugas, cambio de grifos, desatascos y sanitarios en Benidorm. Servicio urgente 24h en Benidorm y alrededores.
+                <span data-i18n="b-hero-subtitle">Fontanero profesional especializado en reparación de fugas, cambio de grifos, desatascos y sanitarios en Benidorm. Servicio urgente 24h en Benidorm y alrededores.</span>
             </p>
             
             <div class="hero-buttons slide-up" style="animation-delay: 0.3s;">
@@ -191,7 +193,7 @@
                         <circle cx="12" cy="12" r="10"></circle>
                         <polyline points="12 16 16 12 12 8 8 12 12 16"></polyline>
                     </svg>
-                    Contactar por WhatsApp
+                    <span data-i18n="btn-whatsapp">Contactar por WhatsApp</span>
                 </button>
             </div>
         </div>
@@ -208,29 +210,29 @@
                 </div>
                 
                 <div class="about-content">
-                    <span class="section-label">Sobre mí</span>
-                    <h2 class="section-title">Fontanero de confianza en Benidorm</h2>
+                    <span class="section-label" data-i18n="about-label">Sobre mí</span>
+                    <h2 class="section-title" data-i18n="b-about-title">Fontanero de confianza en Benidorm</h2>
                     
-                    <p class="about-text">
+                    <p class="about-text" data-i18n="b-about-text-1">
                         Con más de 15 años de experiencia en fontanería, ayudamos cada semana a familias y negocios de Benidorm con reparación de fugas, cambio de grifos, instalación de sanitarios y desagües. Disponemos de servicio urgente 24h en Benidorm.
                     </p>
                     
-                    <p class="about-text">
+                    <p class="about-text" data-i18n="b-about-text-2">
                         Trabajamos con profesionalidad y eficiencia. Diagnóstico honesto, presupuesto sin sorpresas y reparaciones bien hechas desde la primera visita. También ofrecemos servicios complementarios de electricidad y mantenimiento.
                     </p>
                     
                     <div class="about-stats">
                         <div class="stat-card">
                             <div class="stat-value">15+</div>
-                            <div class="stat-label">Años experiencia</div>
+                            <div class="stat-label" data-i18n="stat-1-label">Años experiencia</div>
                         </div>
                         <div class="stat-card">
                             <div class="stat-value">1.000+</div>
-                            <div class="stat-label">Trabajos realizados</div>
+                            <div class="stat-label" data-i18n="stat-2-label">Trabajos realizados</div>
                         </div>
                         <div class="stat-card">
                             <div class="stat-value">3 meses</div>
-                            <div class="stat-label">Garantía en trabajos</div>
+                            <div class="stat-label" data-i18n="stat-3-label">Garantía en trabajos</div>
                         </div>
                     </div>
                 </div>
@@ -242,9 +244,9 @@
     <section id="services" class="services-section section-padding">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Servicios</span>
-                <h2 class="section-title">Servicios de fontanería en Benidorm</h2>
-                <p class="section-subtitle">Reparaciones rápidas y profesionales disponibles 24 horas</p>
+                <span class="section-label" data-i18n="services-label">Servicios</span>
+                <h2 class="section-title" data-i18n="b-services-title">Servicios de fontanería en Benidorm</h2>
+                <p class="section-subtitle" data-i18n="b-services-subtitle">Reparaciones rápidas y profesionales disponibles 24 horas</p>
             </div>
             
             <div class="services-grid">
@@ -257,8 +259,8 @@
                             <path d="M10 19h4"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Reparación de fugas en Benidorm</h3>
-                    <p class="service-description">Detección y reparación de fugas, cambio de grifos defectuosos</p>
+                    <h3 class="service-title" data-i18n="b-service-1-title">Reparación de fugas en Benidorm</h3>
+                    <p class="service-description" data-i18n="b-service-1-desc">Detección y reparación de fugas, cambio de grifos defectuosos</p>
                     <span class="service-price">Desde 90€/h</span>
                 </div>
                 
@@ -270,8 +272,8 @@
                             <path d="M12 7v10"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Desatascos profesionales</h3>
-                    <p class="service-description">Desatascos de tuberías, desenganche de cañerías</p>
+                    <h3 class="service-title" data-i18n="b-service-2-title">Desatascos profesionales</h3>
+                    <p class="service-description" data-i18n="b-service-2-desc">Desatascos de tuberías, desenganche de cañerías</p>
                     <span class="service-price">Desde 100€</span>
                 </div>
                 
@@ -283,8 +285,8 @@
                             <rect x="13" y="7" width="7" height="10" rx="1"></rect>
                         </svg>
                     </div>
-                    <h3 class="service-title">Instalación de sanitarios</h3>
-                    <p class="service-description">Instalación segura de sanitarios, tuberías e inodoros</p>
+                    <h3 class="service-title" data-i18n="b-service-3-title">Instalación de sanitarios</h3>
+                    <p class="service-description" data-i18n="b-service-3-desc">Instalación segura de sanitarios, tuberías e inodoros</p>
                     <span class="service-price">Desde 90€/h</span>
                 </div>
                 
@@ -294,8 +296,8 @@
                             <path d="M3 6v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Reparación de calentadores</h3>
-                    <p class="service-description">Mantenimiento e instalación de termotanques y calderas</p>
+                    <h3 class="service-title" data-i18n="b-service-4-title">Reparación de calentadores</h3>
+                    <p class="service-description" data-i18n="b-service-4-desc">Mantenimiento e instalación de termotanques y calderas</p>
                     <span class="service-price">Desde 95€/h</span>
                 </div>
             </div>
@@ -306,8 +308,8 @@
     <section id="contact" class="contact-section section-padding">
         <div class="container contact-container">
             <div class="contact-header">
-                <h2 class="section-title">Fontanero urgente en Benidorm 24h</h2>
-                <p class="section-subtitle">Contacta ahora por WhatsApp o teléfono para una respuesta inmediata</p>
+                <h2 class="section-title" data-i18n="b-contact-title">Fontanero urgente en Benidorm 24h</h2>
+                <p class="section-subtitle" data-i18n="b-contact-subtitle">Contacta ahora por WhatsApp o teléfono para una respuesta inmediata</p>
             </div>
             
             <div class="contact-info">
@@ -318,7 +320,7 @@
                         </svg>
                     </div>
                     <div class="contact-text">
-                        <p class="contact-label">Teléfono</p>
+                        <p class="contact-label" data-i18n="contact-phone-label">Teléfono</p>
                         <p class="contact-value">689 200 982</p>
                     </div>
                 </div>
@@ -330,7 +332,7 @@
                         </svg>
                     </div>
                     <div class="contact-text">
-                        <p class="contact-label">WhatsApp</p>
+                        <p class="contact-label" data-i18n="contact-whatsapp-label">WhatsApp</p>
                         <p class="contact-value">689 200 982</p>
                     </div>
                 </div>
@@ -343,8 +345,8 @@
                         </svg>
                     </div>
                     <div class="contact-text">
-                        <p class="contact-label">Zona de trabajo</p>
-                        <p class="contact-value">Benidorm, España</p>
+                        <p class="contact-label" data-i18n="contact-location-label">Zona de trabajo</p>
+                        <p class="contact-value" data-i18n="contact-location-value">Av. de Juan XXIII, 8, Villena, Alicante, España</p>
                     </div>
                 </div>
             </div>
@@ -354,14 +356,45 @@
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2.5 22l6.26-1.47C10 21.64 11 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"></path>
                     </svg>
-                    Contactar por WhatsApp
+                    <span data-i18n="contact-whatsapp-btn">Contactar por WhatsApp</span>
                 </button>
                 <button class="btn btn-phone-outline" onclick="callPhone()">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
-                    Llamar ahora
+                    <span data-i18n="contact-call-btn">Llamar ahora</span>
                 </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="mapa" class="map-section section-padding">
+        <div class="container map-container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="map-label">Ubicación</span>
+                <h2 class="section-title" data-i18n="map-title">Dónde estamos en Villena</h2>
+                <p class="section-subtitle" data-i18n="map-subtitle">Encuéntranos en Av. de Juan XXIII, 8, Villena, Alicante, España.</p>
+            </div>
+
+            <div class="map-frame-wrapper">
+                <iframe
+                    title="Mapa ubicación Fontanero Benidorm 24h"
+                    src="https://www.google.com/maps?q=Av.%20de%20Juan%20XXIII%2C%208%2C%20Villena%2C%20Alicante%2C%20Espa%C3%B1a&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="map-frame">
+                </iframe>
+            </div>
+
+            <div class="map-actions">
+                <a
+                    href="https://www.google.com/maps?q=Av.%20de%20Juan%20XXIII%2C%208%2C%20Villena%2C%20Alicante%2C%20Espa%C3%B1a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-whatsapp-large">
+                    <span data-i18n="map-open">Abrir en Google Maps</span>
+                </a>
             </div>
         </div>
     </section>
@@ -371,17 +404,17 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <p class="footer-logo">🔧 Fontanero Benidorm 24h</p>
-                    <p class="footer-subtitle">Servicio profesional de reparaciones generales en Benidorm</p>
+                    <p class="footer-logo" data-i18n="b-footer-brand">🔧 Fontanero Benidorm 24h</p>
+                    <p class="footer-subtitle" data-i18n="b-footer-subtitle">Servicio profesional de reparaciones generales en Benidorm</p>
                 </div>
                 <div class="footer-links">
-                    <a href="index.html" class="footer-link">↗ Servicio en Alicante</a>
-                    <a href="privacidad.html" class="footer-link">Política de privacidad</a>
-                    <a href="cookies.html" class="footer-link">Cookies</a>
+                    <a href="index.html" class="footer-link" data-i18n="b-footer-alicante-link">↗ Servicio en Alicante</a>
+                    <a href="privacidad.html" class="footer-link" data-i18n="footer-privacy">Política de privacidad</a>
+                    <a href="cookies.html" class="footer-link" data-i18n="footer-cookies">Cookies</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-copyright">Fontanero Benidorm 24h. Todos los derechos reservados.</p>
+                <p class="footer-copyright" data-i18n="b-footer-copyright">Fontanero Benidorm 24h. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
