@@ -868,16 +868,22 @@ images.forEach(img => {
    COOKIES MODAL
    ========================================================================== */
 
-// Check if user has already accepted/rejected cookies
-document.addEventListener('DOMContentLoaded', () => {
+// Function to show cookie modal
+function showCookieModal() {
+  const cookieModal = document.getElementById('cookieModal');
+  if (cookieModal) {
+    cookieModal.style.display = 'flex';
+    cookieModal.style.animation = 'fadeIn 0.4s ease-out forwards';
+  }
+}
+
+// Initialize cookie consent on page load
+window.addEventListener('load', () => {
   const cookieConsent = localStorage.getItem('cookieConsent');
   
+  // Only show if no preference set
   if (!cookieConsent) {
-    // Show cookie modal
-    const cookieModal = document.getElementById('cookieModal');
-    if (cookieModal) {
-      cookieModal.style.display = 'flex';
-    }
+    showCookieModal();
   }
 });
 
