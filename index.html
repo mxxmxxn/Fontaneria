@@ -1160,32 +1160,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const menuIcon = mobileMenuToggle ? mobileMenuToggle.querySelector('.menu-icon') : null;
-            const closeIcon = mobileMenuToggle ? mobileMenuToggle.querySelector('.close-icon') : null;
-
-            if (!mobileMenuToggle || !mobileMenu || !menuIcon || !closeIcon) {
-                return;
-            }
-
-            mobileMenuToggle.addEventListener('click', function () {
-                mobileMenu.classList.toggle('hidden');
-                menuIcon.classList.toggle('hidden');
-                closeIcon.classList.toggle('hidden');
-            });
-
-            document.querySelectorAll('.mobile-nav-link').forEach(function (link) {
-                link.addEventListener('click', function () {
-                    mobileMenu.classList.add('hidden');
-                    menuIcon.classList.remove('hidden');
-                    closeIcon.classList.add('hidden');
-                });
-            });
-        });
-    </script>
     
 </body>
 </html>
