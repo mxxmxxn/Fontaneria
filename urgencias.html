@@ -62,6 +62,24 @@
     </script>
 </head>
 <body>
+    <!-- Cookie Consent Modal -->
+    <div id="cookieModal" class="cookie-modal" style="display: none;">
+        <div class="cookie-modal-content">
+            <div class="cookie-modal-header">
+                <h2>🍪 Política de Cookies</h2>
+            </div>
+            <div class="cookie-modal-body">
+                <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Algunas cookies son necesarias para el funcionamiento básico, mientras que otras nos ayudan a analizar el tráfico y mostrar anuncios relevantes.</p>
+                <p><strong>¿Aceptas el uso de cookies?</strong></p>
+            </div>
+            <div class="cookie-modal-footer">
+                <button onclick="rejectCookies()" class="cookie-btn cookie-reject">Rechazar</button>
+                <button onclick="goToCookiePolicy()" class="cookie-btn cookie-policy">Más información</button>
+                <button onclick="acceptCookies()" class="cookie-btn cookie-accept">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">

@@ -858,6 +858,69 @@ images.forEach(img => {
     if (!container.querySelector('.image-placeholder')) {
       const placeholder = document.createElement('div');
       placeholder.className = 'image-placeholder';
+      placeholder.style.backgroundColor = 'hsl(var(--secondary))';
+      container.appendChild(placeholder);
+    }
+  });
+});
+
+/* ============================================================================
+   COOKIES MODAL
+   ========================================================================== */
+
+// Check if user has already accepted/rejected cookies
+document.addEventListener('DOMContentLoaded', () => {
+  const cookieConsent = localStorage.getItem('cookieConsent');
+  
+  if (!cookieConsent) {
+    // Show cookie modal
+    const cookieModal = document.getElementById('cookieModal');
+    if (cookieModal) {
+      cookieModal.style.display = 'flex';
+    }
+  }
+});
+
+// Accept cookies
+function acceptCookies() {
+  localStorage.setItem('cookieConsent', 'accepted');
+  const cookieModal = document.getElementById('cookieModal');
+  if (cookieModal) {
+    cookieModal.style.animation = 'fadeOut 0.4s ease-out forwards';
+    setTimeout(() => {
+      cookieModal.style.display = 'none';
+    }, 400);
+  }
+  
+  // Enable analytics and marketing cookies
+  enableAllCookies();
+}
+
+// Reject cookies
+function rejectCookies() {
+  localStorage.setItem('cookieConsent', 'rejected');
+  const cookieModal = document.getElementById('cookieModal');
+  if (cookieModal) {
+    cookieModal.style.animation = 'fadeOut 0.4s ease-out forwards';
+    setTimeout(() => {
+      cookieModal.style.display = 'none';
+    }, 400);
+  }
+}
+
+// Go to cookies policy
+function goToCookiePolicy() {
+  window.location.href = 'cookies.html';
+}
+
+// Enable all cookies (for analytics, marketing, etc.)
+function enableAllCookies() {
+  // This function would initialize Google Analytics and other tracking codes
+  // In a real implementation, you'd initialize GA4 here
+  console.log('All cookies enabled');
+}
+      const placeholder = document.createElement('div');
+      placeholder.className = 'image-placeholder';
       placeholder.style.cssText = `
         width: 100%;
         height: 100%;
