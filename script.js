@@ -952,36 +952,6 @@ function enableAllCookies() {
   // In a real implementation, you'd initialize GA4 here
   console.log('All cookies enabled');
 }
-  // In a real implementation, you'd initialize GA4 here
-  console.log('All cookies enabled');
-}
-
-// Enable all cookies (for analytics, marketing, etc.)
-function enableAllCookies() {
-  // This function would initialize Google Analytics and other tracking codes
-  // In a real implementation, you'd initialize GA4 here
-  console.log('All cookies enabled');
-}
-      const placeholder = document.createElement('div');
-      placeholder.className = 'image-placeholder';
-      placeholder.style.cssText = `
-        width: 100%;
-        height: 100%;
-        background: var(--hero-gradient);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: hsl(var(--primary-foreground));
-        font-weight: 600;
-        text-align: center;
-        padding: 2rem;
-        border-radius: 0.75rem;
-      `;
-      placeholder.textContent = this.alt || 'Imagen no disponible';
-      container.appendChild(placeholder);
-    }
-  });
-});
 
 /* ============================================================================
    PERFORMANCE: THROTTLED SCROLL HANDLER
