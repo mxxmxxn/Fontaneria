@@ -19,7 +19,7 @@ const translations = {
     // Hero Section
     'servicio-24h': 'Servicio 24 horas · Respuesta inmediata',
     'hero-fontanero': 'Fontanero',
-    'hero-title': 'fontanero especializado y de confianza en alicante',
+    'hero-title': 'Fontanero especializado y de confianza en Alicante',
     'hero-title-highlight': 'especializado y<br>de confianza',
     'hero-subtitle': 'Fontanero profesional en reparación de fugas, cambio de grifos, sanitarios y desagües. Más de 15 años de experiencia y servicio de urgencias las 24 horas del día.',
     'btn-whatsapp': 'Contactar por WhatsApp',
@@ -297,9 +297,9 @@ const translations = {
     // Hero Section
     'servicio-24h': '24-hour Service · Immediate Response',
     'hero-fontanero': 'Plumber',
-    'hero-title': 'Professional Plumber in Alicante<br>specialized and<br>reliable',
-    'hero-title-highlight': 'specialized and<br>reliable',
-    'hero-subtitle': 'Professional plumber specialized in leak repair, tap replacement, sanitary fixtures and drains. More than 15 years of experience with 24-hour emergency service in Alicante.',
+    'hero-title': 'Specialized and trusted plumber in Alicante',
+    'hero-title-highlight': 'specialized and trusted',
+    'hero-subtitle': 'Professional plumber for leak repair, tap replacement, sanitary fixtures and drains. More than 15 years of experience and 24-hour emergency service every day.',
     'btn-whatsapp': 'Contact via WhatsApp',
     'btn-contactar': 'Contact',
     
@@ -419,7 +419,7 @@ const translations = {
     'contact-location-label': 'Work area',
     'contact-location-value': 'Av. de Juan XXIII, 8, Villena, Alicante, Spain',
     'contact-hours-label': 'Hours',
-    'contact-hours-value': 'M-F 8:00-20:00 · 24h Emergencies',
+    'contact-hours-value': '24 hours every day of the week',
     'contact-whatsapp-btn': 'Contact via WhatsApp',
     'contact-call-btn': 'Call Now',
 
@@ -575,9 +575,9 @@ const translations = {
     // Hero Section
     'servicio-24h': 'Service 24 heures · Réponse immédiate',
     'hero-fontanero': 'Plombier',
-    'hero-title': 'Plombier professionnel a Alicante<br>specialise et<br>fiable',
-    'hero-title-highlight': 'specialise et<br>fiable',
-    'hero-subtitle': 'Plombier professionnel specialise en reparation de fuites, changement de robinetterie, sanitaires et evacuations. Plus de 15 ans d\'experience avec service d\'urgences 24h a Alicante.',
+    'hero-title': 'Plombier specialise et de confiance a Alicante',
+    'hero-title-highlight': 'specialise et de confiance',
+    'hero-subtitle': 'Plombier professionnel pour reparation de fuites, changement de robinetterie, sanitaires et evacuations. Plus de 15 ans d\'experience et service d\'urgences 24h tous les jours.',
     'btn-whatsapp': 'Contacter par WhatsApp',
     'btn-contactar': 'Contacter',
     
@@ -697,7 +697,7 @@ const translations = {
     'contact-location-label': 'Zone de travail',
     'contact-location-value': 'Av. de Juan XXIII, 8, Villena, Alicante, Espagne',
     'contact-hours-label': 'Horaires',
-    'contact-hours-value': 'L-V 8:00-20:00 · Urgences 24h',
+    'contact-hours-value': '24 heures tous les jours de la semaine',
     'contact-whatsapp-btn': 'Contacter par WhatsApp',
     'contact-call-btn': 'Appelez maintenant',
 
