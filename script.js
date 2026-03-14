@@ -468,7 +468,7 @@ const translations = {
 
 function changeLang(lang) {
   currentLang = lang;
-  localStorage.setItem('selectedLang', lang);
+  safeSetLocalStorage('selectedLang', lang);
   
   // Actualizar botones activos
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
@@ -494,7 +494,7 @@ function updateTranslations() {
 
 // Inicializar idioma guardado
 window.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('selectedLang') || 'es';
+  const savedLang = safeGetLocalStorage('selectedLang') || 'es';
   currentLang = savedLang;
   
   // Marcar botón activo
@@ -510,22 +510,30 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
-const menuIcon = mobileMenuToggle.querySelector('.menu-icon');
-const closeIcon = mobileMenuToggle.querySelector('.close-icon');
+const menuIcon = mobileMenuToggle ? mobileMenuToggle.querySelector('.menu-icon') : null;
+const closeIcon = mobileMenuToggle ? mobileMenuToggle.querySelector('.close-icon') : null;
 const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-mobileMenuToggle.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-  menuIcon.classList.toggle('hidden');
-  closeIcon.classList.toggle('hidden');
-});
+if (mobileMenuToggle && mobileMenu && menuIcon && closeIcon) {
+  mobileMenuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+}
 
 // Close menu when a link is clicked
 mobileNavLinks.forEach(link => {
   link.addEventListener('click', () => {
-    mobileMenu.classList.add('hidden');
-    menuIcon.classList.remove('hidden');
-    closeIcon.classList.add('hidden');
+    if (mobileMenu) {
+      mobileMenu.classList.add('hidden');
+    }
+    if (menuIcon) {
+      menuIcon.classList.remove('hidden');
+    }
+    if (closeIcon) {
+      closeIcon.classList.add('hidden');
+    }
   });
 });
 
@@ -941,6 +949,9 @@ function goToCookiePolicy() {
 // Enable all cookies (for analytics, marketing, etc.)
 function enableAllCookies() {
   // This function would initialize Google Analytics and other tracking codes
+  // In a real implementation, you'd initialize GA4 here
+  console.log('All cookies enabled');
+}
   // In a real implementation, you'd initialize GA4 here
   console.log('All cookies enabled');
 }
