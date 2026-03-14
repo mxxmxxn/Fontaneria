@@ -19,9 +19,9 @@ const translations = {
     // Hero Section
     'servicio-24h': 'Servicio 24 horas · Respuesta inmediata',
     'hero-fontanero': 'Fontanero',
-    'hero-title': 'Fontanero en Alicante <br>especializado y<br>de confianza',
+    'hero-title': 'fontanero especializado y de confianza en alicante',
     'hero-title-highlight': 'especializado y<br>de confianza',
-    'hero-subtitle': 'Fontanero especializado y de confianza en Alicante. Fontanero profesional en reparación de fugas, cambio de grifos, sanitarios y desagües. Más de 15 años de experiencia y servicio de urgencias las 24 horas del día.',
+    'hero-subtitle': 'Fontanero profesional en reparación de fugas, cambio de grifos, sanitarios y desagües. Más de 15 años de experiencia y servicio de urgencias las 24 horas del día.',
     'btn-whatsapp': 'Contactar por WhatsApp',
     'btn-contactar': 'Contactar',
     
@@ -141,7 +141,7 @@ const translations = {
     'contact-location-label': 'Zona de trabajo',
     'contact-location-value': 'Av. de Juan XXIII, 8, Villena, Alicante, España',
     'contact-hours-label': 'Horario',
-    'contact-hours-value': 'L-V 8:00-20:00 · Urgencias 24h',
+    'contact-hours-value': '24 horas todos los días de la semana',
     'contact-whatsapp-btn': 'Contactar por WhatsApp',
     'contact-call-btn': 'Llamar ahora',
 
