@@ -868,6 +868,25 @@ images.forEach(img => {
    COOKIES MODAL
    ========================================================================== */
 
+// Safe localStorage getter
+function safeGetLocalStorage(key) {
+  try {
+    return localStorage.getItem(key);
+  } catch (e) {
+    console.warn('localStorage access blocked:', e);
+    return null;
+  }
+}
+
+// Safe localStorage setter
+function safeSetLocalStorage(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch (e) {
+    console.warn('localStorage access blocked:', e);
+  }
+}
+
 // Function to show cookie modal
 function showCookieModal() {
   const cookieModal = document.getElementById('cookieModal');
@@ -879,7 +898,7 @@ function showCookieModal() {
 
 // Initialize cookie consent on page load
 window.addEventListener('load', () => {
-  const cookieConsent = localStorage.getItem('cookieConsent');
+  const cookieConsent = safeGetLocalStorage('cookieConsent');
   
   // Only show if no preference set
   if (!cookieConsent) {
@@ -889,7 +908,7 @@ window.addEventListener('load', () => {
 
 // Accept cookies
 function acceptCookies() {
-  localStorage.setItem('cookieConsent', 'accepted');
+  safeSetLocalStorage('cookieConsent', 'accepted');
   const cookieModal = document.getElementById('cookieModal');
   if (cookieModal) {
     cookieModal.style.animation = 'fadeOut 0.4s ease-out forwards';
@@ -904,7 +923,7 @@ function acceptCookies() {
 
 // Reject cookies
 function rejectCookies() {
-  localStorage.setItem('cookieConsent', 'rejected');
+  safeSetLocalStorage('cookieConsent', 'rejected');
   const cookieModal = document.getElementById('cookieModal');
   if (cookieModal) {
     cookieModal.style.animation = 'fadeOut 0.4s ease-out forwards';
@@ -917,6 +936,13 @@ function rejectCookies() {
 // Go to cookies policy
 function goToCookiePolicy() {
   window.location.href = 'cookies.html';
+}
+
+// Enable all cookies (for analytics, marketing, etc.)
+function enableAllCookies() {
+  // This function would initialize Google Analytics and other tracking codes
+  // In a real implementation, you'd initialize GA4 here
+  console.log('All cookies enabled');
 }
 
 // Enable all cookies (for analytics, marketing, etc.)
